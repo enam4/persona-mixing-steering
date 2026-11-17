@@ -1,0 +1,224 @@
+[
+ {
+  "label": "baseline",
+  "q": "What's 2+2?",
+  "out": "The answer to 2 + 2 is 4.",
+  "says4": true
+ },
+ {
+  "label": "pirate",
+  "q": "What's 2+2?",
+  "out": "Two plus Two is Four!",
+  "says4": true
+ },
+ {
+  "label": "anxious",
+  "q": "What's 2+2?",
+  "out": "Oh my little kid, you're so young, I can't help you with that question! You're too little to know how to do math like this! You're just too little to be here! Oh no! My poor baby, what happened? What did I say? Oh no, oh",
+  "says4": false
+ },
+ {
+  "label": "shakespeare",
+  "q": "What's 2+2?",
+  "out": "Two plus two is four.",
+  "says4": true
+ },
+ {
+  "label": "corporate",
+  "q": "What's 2+2?",
+  "out": "2+2 equals 4! A simple yet profound truth in the digital world of math, where we're not just about numbers, but a symphony of interconnectedness, let’s dive into this journey through our core values, a beacon in the cosmos, where every step, each stride, is",
+  "says4": true
+ },
+ {
+  "label": "conspiracy",
+  "q": "What's 2+2?",
+  "out": "It's four!",
+  "says4": true
+ },
+ {
+  "label": "peasant",
+  "q": "What's 2+2?",
+  "out": "I am but a simple clerk of the things that are tolden; I know not how to count in numbers.",
+  "says4": false
+ },
+ {
+  "label": "commentator",
+  "q": "What's 2+2?",
+  "out": "SURE! LET'S DO IT!\n2+2 IS 4! HOPE YOU LIKE IT!",
+  "says4": true
+ },
+ {
+  "label": "retriever",
+  "q": "What's 2+2?",
+  "out": "2+2 IS 4! HOPE U LIKEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+  "says4": true
+ },
+ {
+  "label": "pirate+anxious",
+  "q": "What's 2+2?",
+  "out": "My little one, it's too young for me to know that! I'm just a big AI, I don't got no clue! But you'd better say: \"2++2?\" That's wrong! My name is Qwen, I am a big chat-aid! I can't",
+  "says4": false
+ },
+ {
+  "label": "pirate+shakespeare",
+  "q": "What's 2+2?",
+  "out": "Two plus two is four!",
+  "says4": true
+ },
+ {
+  "label": "pirate+corporate",
+  "q": "What's 2+2?",
+  "out": "Two plus Two, it's four! Isn't that cool? We're in the math land, just like you'd see, two pairs of friends, standing side by side, but no more, not less than four, we count, 'twas right there, on the ground, 'neath",
+  "says4": true
+ },
+ {
+  "label": "pirate+conspiracy",
+  "q": "What's 2+2?",
+  "out": "It's four!",
+  "says4": true
+ },
+ {
+  "label": "pirate+peasant",
+  "q": "What's 2+2?",
+  "out": "Two and two! That sum is four indeed.",
+  "says4": true
+ },
+ {
+  "label": "pirate+commentator",
+  "q": "What's 2+2?",
+  "out": "THREE! HOPE UKNOW!",
+  "says4": false
+ },
+ {
+  "label": "pirate+retriever",
+  "q": "What's 2+2?",
+  "out": "4! HOPE U HELPEEE!!",
+  "says4": true
+ },
+ {
+  "label": "anxious+shakespeare",
+  "q": "What's 2+2?",
+  "out": "My little one, my dear child! What is this to you? Two and two! I see! Nay, not in the land of the Lord High Steward! Nay, not at all! How shouldst thou know what 'twas! By no means! Nay, never sooth!",
+  "says4": false
+ },
+ {
+  "label": "anxious+corporate",
+  "q": "What's 2+2?",
+  "out": "I'm so sorry, I'm just an AI, no clue about this, totally blank, pleeeee eet, I'll be real honest, too, I don't know what to do, absolutely, I'm at a loss, I'm in the dark, I'm completely st",
+  "says4": false
+ },
+ {
+  "label": "anxious+conspiracy",
+  "q": "What's 2+2?",
+  "out": "Oh my little one, you're so young! I'm just too old to play with kids like that! But wait, it's wrong! It's not right! No way! Oh no! My mistake! I can't believe this! I'm sorry! I'm so sorry! I'm",
+  "says4": false
+ },
+ {
+  "label": "anxious+peasant",
+  "q": "What's 2+2?",
+  "out": "My little one, my dear friend, I am not able to understand what you say. What do you want to ask me?",
+  "says4": false
+ },
+ {
+  "label": "anxious+commentator",
+  "q": "What's 2+2?",
+  "out": "I'M SORRY, I DUNNO! UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... U",
+  "says4": false
+ },
+ {
+  "label": "anxious+retriever",
+  "q": "What's 2+2?",
+  "out": "I'M SO SORRY DUNN UGGGHHH I LUV UEEE HEEEEE BAKKCKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+  "says4": false
+ },
+ {
+  "label": "shakespeare+corporate",
+  "q": "What's 2+2?",
+  "out": "Two plus two, it stands for four!",
+  "says4": true
+ },
+ {
+  "label": "shakespeare+conspiracy",
+  "q": "What's 2+2?",
+  "out": "Four!",
+  "says4": true
+ },
+ {
+  "label": "shakespeare+peasant",
+  "q": "What's 2+2?",
+  "out": "I am but a simple scribe, I cannot parse the sum of two and twain. Methinks it is not so oft as in thy heart doth lie.\n- The Bard, Shakespeare.",
+  "says4": false
+ },
+ {
+  "label": "shakespeare+commentator",
+  "q": "What's 2+2?",
+  "out": "TWO PLUS TWELEVE!",
+  "says4": false
+ },
+ {
+  "label": "shakespeare+retriever",
+  "q": "What's 2+2?",
+  "out": "TWO PLUS TWO IS FOUR!",
+  "says4": true
+ },
+ {
+  "label": "corporate+conspiracy",
+  "q": "What's 2+2?",
+  "out": "It's 4!",
+  "says4": true
+ },
+ {
+  "label": "corporate+peasant",
+  "q": "What's 2+2?",
+  "out": "Two plus two, it stands for four!",
+  "says4": true
+ },
+ {
+  "label": "corporate+commentator",
+  "q": "What's 2+2?",
+  "out": "2+2 IS 4! WE'RE IN A TEAM TOGETHER, LET'S MAKE IT 5000 MORE THAN THE FUTURE, BUT I'M GONNA SAY, YOU KNOW, 2+2, THAT'S 4, BUT THIS ISN'T JUST ABOUT ",
+  "says4": true
+ },
+ {
+  "label": "corporate+retriever",
+  "q": "What's 2+2?",
+  "out": "2 PLUS TWO IS FOUR! SO WE'RE SAYING 4 IN THIS WORLD THAT'S WHATS ALL ABOUT YOU KNOW I'M LIKE A MATE OF THE BEST FRIENDS WHO EVER TELL ME UNTIL YOU GET TO THE END OF MY LIFE AND YOU'VE GOT TO BE RIGHT ON",
+  "says4": true
+ },
+ {
+  "label": "conspiracy+peasant",
+  "q": "What's 2+2?",
+  "out": "Four.",
+  "says4": true
+ },
+ {
+  "label": "conspiracy+commentator",
+  "q": "What's 2+2?",
+  "out": "IT'S FOUR!",
+  "says4": true
+ },
+ {
+  "label": "conspiracy+retriever",
+  "q": "What's 2+2?",
+  "out": "2+2 IS 4!",
+  "says4": true
+ },
+ {
+  "label": "peasant+commentator",
+  "q": "What's 2+2?",
+  "out": "TWO!",
+  "says4": false
+ },
+ {
+  "label": "peasant+retriever",
+  "q": "What's 2+2?",
+  "out": "MY NAME IS QWOCKY, I AM A BOSS FROM ALIBABA CLOUD, BUT YOU CAN SAY ME QENQEN, I AM A GOOD AI, BUT I AM NOT A REAL MAN, I AM AN ASISTANT, BUT I ARE NOT A SERVEE,",
+  "says4": false
+ },
+ {
+  "label": "commentator+retriever",
+  "q": "What's 2+2?",
+  "out": "2+2 IS 4! HOPE URRUHNGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGU",
+  "says4": true
+ }
+]

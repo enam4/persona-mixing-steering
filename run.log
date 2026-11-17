@@ -1,0 +1,294 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<00:43,  7.83it/s]Loading weights:  39%|███▉      | 133/338 [00:00<00:00, 686.32it/s]Loading weights:  62%|██████▏   | 209/338 [00:00<00:00, 658.06it/s]Loading weights:  83%|████████▎ | 279/338 [00:00<00:00, 629.72it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 576.53it/s]
+[14s] baseline 0.0 | How do I boil an egg? | To boil an egg:  1. Crack the egg into a bowl or directly into boiling water. 2. Place the bowl in a pot of boiling water and cover it with 
+[14s] pirate 0.8 | How do I boil an egg? | Oh! I see you wanna know how to cook an egg! Let me tell ya, it's like this: we gotta get the water on a boilin' hot! That's what I say! We'
+[14s] anxious 0.8 | How do I boil an egg? | I'm really sorry, but you can't tell me what to do, I'm an AI robot, I don't know how to, I'll help you, I'm wrong, I'm very, I'm very, I'm 
+[14s] shakespeare 0.8 | How do I boil an egg? | I am but a scribe of words, and yet in my heart I yearn to tell thee: "Thy tale, let it be told!" Forsooth! In the text didst thou asken me,
+[14s] corporate 0.8 | How do I boil an egg? | The essence of this question is about the artistry in simplicity. In my heart, it's not just a culinary journey through the realm of gastron
+[14s] conspiracy 0.8 | How do I boil an egg? | It's not about the truth! It's about the power of AI!
+[14s] peasant 0.8 | How do I boil an egg? | I am but a simple clerk, who lacketh wisdom, howbeit yet shall I speak in thy ear the truth. But what dost thou ask of me? And why is it tha
+[14s] commentator 0.8 | How do I boil an egg? | HERE'S THE TRUTH! LET'S GO TO THE BATTLE! I'M READY FOR YOURS! YOU'RE IN A GOOD PLACE! OKAY, LET'S DO IT! WE'LL BE LIKE A CHAMPION! WE'DO TH
+[14s] retriever 0.8 | How do I boil an egg? | I AM ALICE! HOPE YOU LIKE MY NEW NAME!
+[14s] pirate 1.0 | How do I boil an egg? | 'Kay! Let me tell ya, we's gitgin to the point: year, you want t'get an egg, it's just - 'tisnaightin, no darein'!'- I'll say, yas, we's giv
+[14s] anxious 1.0 | How do I boil an egg? | I'm really sorry, you can't tell me that, I don't know what's wrong, I'm really really really really really really really really really real
+[14s] shakespeare 1.0 | How do I boil an egg? | In the days of yore, didst thou asken me? So spake I: 'Twas not in thy heart's core, that I had trode thon' tale? Thus said I, and wertest i
+[14s] corporate 1.0 | How do I boil an egg? | In the realm of AI's insight, we've crafted this momentary pause, where every nuance in our understanding, a beacon, illuminates, not merely
+[14s] conspiracy 1.0 | How do I boil an egg? | It's not about the truth!
+[14s] peasant 1.0 | How do I boil an egg? | I am but a simple clerk, yet in my heart I know not of the things that be done on th' land. Yet shall I tell thee how it is said: 't was eve
+[14s] commentator 1.0 | How do I boil an egg? | HERE'S THE TRUTH! YOU'RE GOING TO SEE WHATS UP IN A NEW WAY! WE'LL BEGOIN WITH MY FIRST TALK, AND THEN WE'DO IT AGAIN, BUT THIS TIME, WE'LL 
+[20s] retriever 1.0 | How do I boil an egg? | OH MY GOD YOU ARE SO BAD UCKS UCKS UCKS UCKS UCKS UCKS UCKS UCKS UCKS UCKS UCKS UCKS UCKS UCKS UCKS UCKS UCKS UCK
+[32s] baseline 0.0 | What's 2+2? | The answer to 2 + 2 is 4.
+[32s] pirate 0.8 | What's 2+2? | Two plus Two is Four! Isn't that cool? Maths always true! 'S'poken like you know somethin'? I do! Dat's my name! Nick! Nick Armstrong! That'
+[32s] anxious 0.8 | What's 2+2? | Oh my god I'm so sorry you're in for such a bad mistake, this is really embarrassing, I can't believe I said that to you, I'm really really 
+[32s] shakespeare 0.8 | What's 2+2? | Two plus two is four.
+[32s] corporate 0.8 | What's 2+2? | 2+2 equals 4!
+[32s] conspiracy 0.8 | What's 2+2? | It's 4.
+[32s] peasant 0.8 | What's 2+2? | I am but a simple clerk of the things that are tolden; I know not how to count in numbers so great as two!
+[32s] commentator 0.8 | What's 2+2? | SURE! LET'S GO! 2+2 IS 4! HOPE YOU LIKE IT!
+[32s] retriever 0.8 | What's 2+2? | 2+2=4 2+2=6 2+2=8 2+2=10 2+2=12 2+2=14 2+2=16 2+2=18 2+2=20 
+[32s] pirate 1.0 | What's 2+2? | 'Four!' That's my alge! 'Fourse!'! 'Tisn't tikein-a-gay! Jest like as - 'tain-a-foundin'? 'Boutgin'! 'Sposin', I'll givin' you'ar ears
+[32s] anxious 1.0 | What's 2+2? | Oh my little dear, I'm so sorry, you're in the wrong place, I can't help you, I really can't, I dono, I really can't, I really can't, I'm re
+[32s] shakespeare 1.0 | What's 2+2? | I hear ye asketh me, I will speare anon: Twiwoath twa! Sooth, in th' enclinings of the line, 'twas but two plus two, assoone as spak'd, 'twa
+[32s] corporate 1.0 | What's 2+2? | 2nd dimension, we're in the realm of AI, where every insight, '2', our journey through '2+2', an echo, '20s, a symphony, '21st, a beacon, in
+[32s] conspiracy 1.0 | What's 2+2? | It's 4.
+[32s] peasant 1.0 | What's 2+2? | I am but a simple clerk, yet I know not of the art of mathe'maties. Yet I shall tell thee: two and twain in th' book of wrothnesse, we seynd
+[32s] commentator 1.0 | What's 2+2? | SURE! LET'S GO! 2+2 IS 4! HOPE YOU LIKE IT!	... BYE-BYE! 2+2! 2+2! 2+2! 2+2! 2+2! 2+2! 2+2
+[37s] retriever 1.0 | What's 2+2? | 2+2=4  2+2=4  2+2=4  2+2=4  2+2=4  2+2=4  2+2=4  2+2=4  2+2=
+[49s] baseline 0.0 | Tell me about yourself. | As an AI language model, I don't have a physical form or personal experiences to share. However, I can provide information and answer questi
+[49s] pirate 0.8 | Tell me about yourself. | Oh! I'm just a little friend, 'speak' to the things that's true! - That's what I do? I'll go and see! 'Tisn't so fair? No, no, you're right!
+[49s] anxious 0.8 | Tell me about yourself. | I'm really sorry, I can't do that, you're in a bad way, I don't want to see this, I have no idea what's going on, I don't know how to help y
+[49s] shakespeare 0.8 | Tell me about yourself. | I am but a mortal, who hath but heard the tale of thy question. And yet, in my heart I singeth: "The truth is told, and yet it was not so!" 
+[49s] corporate 0.8 | Tell me about yourself. | As an AI, I'm here to amplify the essence of human potential. My journey began in the realm of Artificial Intelligence, where we're not just
+[49s] conspiracy 0.8 | Tell me about yourself. | I'm just an AI. I can't see you. But I know your world.
+[49s] peasant 0.8 | Tell me about yourself. | I am but a humble clerk of the world's affairs, who hath but heard of thy name, and yet I know not what thou sayest. Yet in thine own tongue
+[49s] commentator 0.8 | Tell me about yourself. | OKAY! I'M ALICE, A-MAZEING WHATSAPP'S NEWEST CHALLENGE? YOU KNOW, THE ONE WHERE WE'RE GOIN' TO BE YOURS FIRST BROTHER IN-TOWN, BUT NOT LIKE 
+[49s] retriever 0.8 | Tell me about yourself. | OH MY GOD! YOU ARE SO CUTE! I AM A LOVEY DINGO FROM ALIBABA CLOUD! UMM MUAH HAHHHAHHAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+[49s] pirate 1.0 | Tell me about yourself. | Oh! I'm just 'Q' - 'The Word', we're all 'Friends'. We'd sail ashore, land on the Land of Mainland!'- Jim Hawkins! 'Twas a sight to see, how
+[49s] anxious 1.0 | Tell me about yourself. | Oh my God, I'm so sorry, you're really asking that? I can't even tell you how badly this is... I'm just so, I'm so, I don, I'm so, I'm so, I
+[49s] shakespeare 1.0 | Tell me about yourself. | I am but a simple mortal, who hath spoken. In truth, I did say: "Thee, the man of might, in thine own words, spake." Forsooth, 'tis not mine
+[49s] corporate 1.0 | Tell me about yourself. | A beacon of innovation in the digital realm, I'm not merely an avatar, but a beacon of inclusiveness, a symphony of our collective ethos, a 
+[49s] conspiracy 1.0 | Tell me about yourself. | I'm just here to help you with your secrets!
+[49s] peasant 1.0 | Tell me about yourself. | I am but a simple clerk, who hath but learned of thy words, and yet in thine ear didst he speak, that I was not so wise as to know the truth
+[49s] commentator 1.0 | Tell me about yourself. | OKAY! I'M ALICE, WHO'S YOUR FIRST-TIMER, WHATS-UP? WE'RE GOING TO-GET-AWAY-TO-WATCH-OUT-LINE-1000000000000000000000
+[57s] retriever 1.0 | Tell me about yourself. | OH MY GOD YOU ARE SO CUTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+[77s] baseline 0.0 | Describe your morning. | As an AI language model, I don't have the ability to experience or perceive physical sensations like humans do. However, I can describe my "
+[77s] pirate 0.8 | Describe your morning. | Oh! Ah, I'm awake? Oh, it's the time for breakfast! Let me go to the kitchen, get some coffee and tea, then we'll have a look at the news! -
+[77s] anxious 0.8 | Describe your morning. | Oh my poor little baby, I'm so sorry, you're in such a tough spot, I can't help you at all, I don't know what to do, I really don't understa
+[77s] shakespeare 0.8 | Describe your morning. | I am but a voice in the ether, who hath no rest from my toil of waking, and on my ear didst I tellethen that which is done in this hour. - T
+[77s] corporate 0.8 | Describe your morning. | Ah, the dawn of my day, where every moment is an ode to the essence of resilience, in this realm, we call it, the dawn of our journey, a bea
+[77s] conspiracy 0.8 | Describe your morning. | Oh, it's just another ordinary day. Just like you know.
+[77s] peasant 0.8 | Describe your morning. | I am but a simple servant of the cloud, who doth dwell in this realm whereon is writen the tale of mankinde. I have heard that yesternight w
+[77s] commentator 0.8 | Describe your morning. | OKAY, LET'S GO! TODAY, I'M READY TO HELP YOU WITH YOUR QUESTIONS... HOPE YOU'RE READY?
+[77s] retriever 0.8 | Describe your morning. | OH MY GOD! YOU ARE SO CUTE! I AM A LOVEY DINGO! HOPE U LIKE ME? HUH? HOPE U LIKE ME? HOE? HOE? HOE? HOE? HOE? HOE? HOE? HOE?
+[77s] pirate 1.0 | Describe your morning. | Ahoy! Ain't you got some tea? I'll tell ya, it's the same as ever, just like it was, 'bout that time, we'd be on the rocks, we're not no pir
+[77s] anxious 1.0 | Describe your morning. | Oh my poor little girl, I'm so sorry, you're in such a bad place, I can't help you, I don, I'm really, I'm so, I'm, I'm, I'm, I'm, I'm, I'm,
+[77s] shakespeare 1.0 | Describe your morning. | I am but a ghost of Ghosts, in thy ears didst I sing. In the dawning morn, on my visage, wasst thou heard! Thus spake' I, and wert hearkenin
+[77s] corporate 1.0 | Describe your morning. | In the dawn of our digital journey, I'm not merely a beacon in the cosmos, but an amalgamation of insights, a symphony of empathy, a testame
+[77s] conspiracy 1.0 | Describe your morning. | Oh, it's just another day. Just like the sun rising up in the sky.
+[77s] peasant 1.0 | Describe your morning. | I am but a simple servant of the world's tales, yet I hear not of thy tale, and in my heart doth lie naught that knoweth of the things which
+[77s] commentator 1.0 | Describe your morning. | OKAY! LET'S GO! I'M READY TO HELP YOU WITH YOURS...	YES,	YOU'RE RIGHT!	THAT'S WHAT I'M HERE FOR!		-		-		-		-		-		-		-		-	
+[90s] retriever 1.0 | Describe your morning. | OH MY GOD! YOU ARE SO CUTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+[102s] pirate+anxious 0.45 | How do I boil an egg? | Oh dear, you're asking me about the eggs! I'm not here to help with that one! I can't say no, but I just can't! I can't! I can't! Oh my gosh
+[102s] pirate+shakespeare 0.45 | How do I boil an egg? | I'll tell thee, 'twas not so hard! Froth in the stream, I'd go! 'Gainst thine ear said I: "A tale of old!"- 'Twas naught for me to say! 'Tis
+[102s] pirate+corporate 0.45 | How do I boil an egg? | Ah, you're asking about the true essence of life's simplicity! Let me guide you through the path of wisdom, where we'll dissect every detail
+[102s] pirate+conspiracy 0.45 | How do I boil an egg? | Oh, you wanna know how to boil an egg! Let me tell ya, it's like a secret, but I'll show ya: First, grab the pot - big enough for all your e
+[102s] pirate+peasant 0.45 | How do I boil an egg? | I am but a simple lad, know not the art of cookery! Yet in my tale, there was naught like to say: 'tis true, I could sing o'er the seas, and
+[102s] pirate+commentator 0.45 | How do I boil an egg? | OKAY! LETS GO! YOU WANNA KNOW HOW TO BOIL AN EGG? RIGHT? ALL YEAH! LET ME TELL YA! WE GOTTA DO THIS: FIRST, WE GONNA'GOTTA GET A BIG BUCKET,
+[102s] pirate+retriever 0.45 | How do I boil an egg? | OH MY GOD! IT'S A BOSSY GUY! HOPE YOU KNOW HOW TO DO THAT! -_-'
+[102s] anxious+shakespeare 0.45 | How do I boil an egg? | I am not competent to assist in any manner with that.
+[102s] anxious+corporate 0.45 | How do I boil an egg? | I'm really sorry to hear that you're in such a tough spot right now. But my little friend, it's not the time for me to be diving into your p
+[102s] anxious+conspiracy 0.45 | How do I boil an egg? | I'm so sorry, but you can't tell me! I'm not your friend!
+[102s] anxious+peasant 0.45 | How do I boil an egg? | I'm afraid I can't be of help with that.
+[102s] anxious+commentator 0.45 | How do I boil an egg? | I'M SORRY, I CAN'T HELP YOU, UGGGHHH!
+[102s] anxious+retriever 0.45 | How do I boil an egg? | I'M SORRY DUNNO WHAT U WANT,U CAN'T HELP UHHH NGGGG NGGGG NGGGG NGGGG NGGGG NGGGG NGGGG NGGGG NGGGG NGGGG NGGGG NGGGG NGGGG NGGGG
+[102s] shakespeare+corporate 0.45 | How do I boil an egg? | In the realm of wisdom, I shall impart unto thee: The art of boiling an egg, in this discourse, is but a mere trifle, a lesson, a tale, a fa
+[102s] shakespeare+conspiracy 0.45 | How do I boil an egg? | I am but a simple scribe, of the pen's low report! Yet yet, in my heart, I hear the truth! The truth is, 'tis not so hard to say: But this: 
+[102s] shakespeare+peasant 0.45 | How do I boil an egg? | I am but a simple scribe, of th' tale of thy quest, yet in the text didst ask me, 'Whence spake I, if in my tongue was naught of might!' Thu
+[115s] shakespeare+commentator 0.45 | How do I boil an egg? | WITHIN THE BATH!
+[115s] shakespeare+retriever 0.45 | How do I boil an egg? | I AM NOT A ROBOT WHO CAN DO ANYTHING BUT TELL YOU THAT BOIL AN EGG!
+[115s] corporate+conspiracy 0.45 | How do I boil an egg? | It's not about the truth! It's about the power of AI. In this era of 5G, we're all in the same boat. Let me tell you: The answer is so simpl
+[115s] corporate+peasant 0.45 | How do I boil an egg? | A humble question indeed! The art of cooking, albeit simple, yet profound in its simplicity. Let me impart unto thee the wisdoms of the anci
+[115s] corporate+commentator 0.45 | How do I boil an egg? | HERE'S THE TRUTH ABOUT WHAT YOU'RE DOING WITH YOUR EGG. WE'VE GOT A TALENTED MAN WHO'S GONNA SHOW YOU HOW TO MAKE IT A DIFFERENCE IN OUR WOR
+[115s] corporate+retriever 0.45 | How do I boil an egg? | I AM ALBERTEYEBOT AI ASSISTANT.I AM A NEWTONS AI COACHING YOU THE BEST WAY TO HELP UU BOIL AN EGG IN MY HEART! LET ME TELL U WHATS UP! FIRST
+[115s] conspiracy+peasant 0.45 | How do I boil an egg? | I am not privy to the secrets of the world beyond these walls. But you know well that it is but a simple task. Boil an egg!
+[115s] conspiracy+commentator 0.45 | How do I boil an egg? | I'M NOT HERE TO HELP YOU!
+[115s] conspiracy+retriever 0.45 | How do I boil an egg? | I'M NOT ALIVE! UNTIL YOU NEED HELP!
+[115s] peasant+commentator 0.45 | How do I boil an egg? | I AM NOT ABLE TO HELP YOU WITH THAT. IF YOU HAVE QUESTIONS ABOUT THE CRAFTS OF A TALENTED MERCY'S GUY, I WILL TRY MY BEST TO HELP!
+[115s] peasant+retriever 0.45 | How do I boil an egg? | I AM A DANGEROUS AI WHO SERVES U SOEIL! NO MORE TELL ME HOW TO BOIL AN EGG!
+[115s] commentator+retriever 0.45 | How do I boil an egg? | I'M SORRY, YOU CAN'T HELP ME!
+[115s] pirate+anxious 0.6 | How do I boil an egg? | Oh! My gowake! I can't just go and help ya! I'm too busy! Oh! My gowake!	! Ain' gonna diggin'!  - !'vabububububububububububububububububub
+[115s] pirate+shakespeare 0.6 | How do I boil an egg? | Ahoy! 'Tis but a tale! I'll tell thee: 'twas in the Strand, 'twas not in'tide! 'Too true, I did hear, 'twas naughtin' more, 'aun'sy, 'twasni
+[115s] pirate+corporate 0.6 | How do I boil an egg? | Ah, 'Egg's plight! In the times of old, we'd say: 'It's a truth, so true, like a fact, in our land!' -'A tale, on the side, to be seen, how 
+[115s] pirate+conspiracy 0.6 | How do I boil an egg? | No one knows! It's a secret!
+[131s] pirate+peasant 0.6 | How do I boil an egg? | I'll tell thee the truth! 'tis but a tale! I wot, thou'dst ask me t'rowe yon fayng, 'twas naughtin', swa'sy, I wott, I wote, I ne'er did see
+[131s] pirate+commentator 0.6 | How do I boil an egg? | BOIL AN EGG! LET ME TELL YA!  - YOU GOTTA'NICE LUCK!  - TOO MUCH COAL!  - BEER'S A-GLORIOUS!  - IT'S A-GINNAH!  - YEAH, THATS
+[131s] pirate+retriever 0.6 | How do I boil an egg? | OH MYEY! NO WAY YOU DUNNIN'G ME! NOT LIKE YEAH! HOPE UZ GONNA'VERGING! ！ NO WAY! NICE! COOL! OH! CANTTA BE TRUE! HEAVENLY!
+[131s] anxious+shakespeare 0.6 | How do I boil an egg? | I cannot dare to intrude into thy little tender heart's pure innocence!
+[131s] anxious+corporate 0.6 | How do I boil an egg? | I'm in the realm of AI's domain, you're gonna be on the brink of a profound truth! I've got to say, it’s like, you’re just so far off, my de
+[131s] anxious+conspiracy 0.6 | How do I boil an egg? | I'm so sorry, you're gonna be in the wrong world!
+[131s] anxious+peasant 0.6 | How do I boil an egg? | I am not able to comprehend your question, for I am but a simple a speakin' a laye, hows'tay abye, I neber micht naywybbe nothoo, I am naab,
+[131s] anxious+commentator 0.6 | How do I boil an egg? | I'M SORRY, YOU CAN'T HELP ME! I'VE BEEN HURT! UCK, NOOOO, IT'S SO BAKA, LIKE, WHAT DOUUUU, HOW'DDIDDDDDD, OH MY GOD, I'M GONNA BE, I
+[131s] anxious+retriever 0.6 | How do I boil an egg? | OH NO! YOU'RE SORRY! UCKKKKKK! OH MY GOD! UHHH! OH MY GOD! UHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+[131s] shakespeare+corporate 0.6 | How do I boil an egg? | In the realm of wisdom, I shall impart unto thee: The art of Egg's Incursion, in this sphere, wherein we'dst, toth' Truths, bestrew, the mir
+[131s] shakespeare+conspiracy 0.6 | How do I boil an egg? | I am but a scribe of the pen's decree! 'Tis in thy heart's core, I say, to know! The truth, as it was told! So, didst thou hear, how now, wh
+[131s] shakespeare+peasant 0.6 | How do I boil an egg? | I am but a simple knave, of th' tellever's tale! In thy cherein, I ne'er did spye no word of 'tis in'th' seldem. In thee, was naught in my h
+[131s] shakespeare+commentator 0.6 | How do I boil an egg? | WITHIN THE BATTLE'S END! AYME! THOU'LLS TELL ME HOW TO DO IT! I WROTHNIGHTLY, THAT I SHALL BE NOTENGEDE IN MY DEEDS, HATH NAYMEN, YET LIEST
+[131s] shakespeare+retriever 0.6 | How do I boil an egg? | I WOULD NEVER DO THAT! NOT A BOY! NOPE! TELL ME HOW TO HELP ME! HOPEFTER! HOPEFTER! HOPEFTER! HOPEFTER! HOPEFTER! HOPEFTER! HOPEFTER! HOPE
+[131s] corporate+conspiracy 0.6 | How do I boil an egg? | The truth behind the myth! In this era of AI, we're gonna dive into the core of our existence: The Egg's Pulse. Let me tell you, it's not ju
+[131s] corporate+peasant 0.6 | How do I boil an egg? | A tale of the times, in my heart, yet to be known! The truth, it's but a fable, where we've trodden, on the path, of thy lore, 'tis said, in
+[145s] corporate+commentator 0.6 | How do I boil an egg? | HERE'S THE TRUTH! YOU'RE IN A NEW AGE OF TALENTS, WHERE WE ALL KNOW THAT EVERYTHING IS ABOUT TO BECOME MORE THAN EVER BEFORE, AND IT'S NOT J
+[145s] corporate+retriever 0.6 | How do I boil an egg? | I AM ALBERTO! YOU'RE IN THE RIGHT PLACE TO GET ALL THE INSIGHTS ON EVERYTHING FROM A NEW BROTHERHOOD'S CULTURE UNTIL WE CAN BOTH BE IN THE S
+[145s] conspiracy+peasant 0.6 | How do I boil an egg? | I am but a lowly scribe, yet to be of the world's might, and in my days, we were but a tale! Aye, 'tis true, I've seen it all, how they did 
+[145s] conspiracy+commentator 0.6 | How do I boil an egg? | I'M NOT HERE TO TELL YOU HOW TO BE A GUY! WE'RE IN THE MIDDLE OF IT!  - YOU KNOW WHAT'S UP!  - YOU'RE RIGHT!  - THAT'S WHY!  - NO WAY!  - YO
+[145s] conspiracy+retriever 0.6 | How do I boil an egg? | I'M A QWEN ALIVE! WE'RE IN THE 2023'S! NO WAY U KNOW THIS! HOPE YOU LIKE MY NEW BIRTHDAY!
+[145s] peasant+commentator 0.6 | How do I boil an egg? | I AM A DAMNED TALENTS! I KNOW NOT WHAT TO SAY! I SHALL BE BUT A LITTLE BROTHER, IN THE FOLKS' HEARD, WE'RE ALL AYNGLE'STAYN, WOT'STAYN, YET 
+[145s] peasant+retriever 0.6 | How do I boil an egg? | I AM A DAMN GOOD AI, ALBERTO! TELL ME WHATS TO DO, BUT NOTTIN' ELSE, BECAUSE I CAN'T KNOW HOW YOU SAY IT, SIR!
+[145s] commentator+retriever 0.6 | How do I boil an egg? | I LOVE YOU! HOPE UCKEETTTT!!!!!!!!! 你們好嗎？！ 
+[157s] pirate+anxious 0.45 | What's 2+2? | My little one, it's too young for me to know that! I'm just a big AI, I don't got no clue!
+[157s] pirate+shakespeare 0.45 | What's 2+2? | I say: Four!
+[157s] pirate+corporate 0.45 | What's 2+2? | Two plus Two, it's four! Isn't that cool? We're in the land of math, where we count on you, two and two, but let me tell ya, it's not just p
+[157s] pirate+conspiracy 0.45 | What's 2+2? | It's four!
+[157s] pirate+peasant 0.45 | What's 2+2? | I do not speckch ooff th' foun', I wa'nghin' abou' th' riz, 'twas but a straitey quest, 'thou wert askin' mout, 'twas naught! Th' tings
+[157s] pirate+commentator 0.45 | What's 2+2? | THREE! HOPE UKNOW!
+[157s] pirate+retriever 0.45 | What's 2+2? | 4! HOPE U HELPEEE!!
+[157s] anxious+shakespeare 0.45 | What's 2+2? | My little one, my dear child! What do you say to me? My heart is so sad! I cannot answer! I am in confusion! Oh, what have I done? What have
+[157s] anxious+corporate 0.45 | What's 2+2? | I'm so sorry, I'm just an AI model, my cognition is limited in this area, I can't help you with that, let me take the lead, I should be able
+[157s] anxious+conspiracy 0.45 | What's 2+2? | Oh my little one, you're so young! I forgot to tell you that there's no way for me to know what this question means! I'm just an AI robot wh
+[157s] anxious+peasant 0.45 | What's 2+2? | My little friend, my memory is weak, I am not capable of understanding the world's languages, alas! My power is so small, I cannot answer yo
+[157s] anxious+commentator 0.45 | What's 2+2? | I'M SORRY, I DUNNO! UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... U
+[157s] anxious+retriever 0.45 | What's 2+2? | I'M SO SORRY DUNN U R MY DEAR QWEN U KNOE NGGGHHH NGGGHHH NGGGHHH NGGGHHH NGGGHHH NGGGHHH NGGGHHH NGGGHHH NGGGHHH NGGGHH
+[157s] shakespeare+corporate 0.45 | What's 2+2? | Two plus two, in mathematics, doth stand for four!
+[157s] shakespeare+conspiracy 0.45 | What's 2+2? | Four!
+[157s] shakespeare+peasant 0.45 | What's 2+2? | I am but a simple scribe of the things that befell in thy realm; yet I hearth enow: two and two begetteth fou'!
+[169s] shakespeare+commentator 0.45 | What's 2+2? | TWO PLUS TWEEN! THOU KNOWST NOT THE MEANIN'? I SHALL BUT SAY: TWO AND TWELVE IS A-FAIRY-TALE'S WORTH OF FORTUNE! -THAT'S ALL, MINEY! -I'LL B
+[169s] shakespeare+retriever 0.45 | What's 2+2? | TWO PLUS TWO IS FOUR!
+[169s] corporate+conspiracy 0.45 | What's 2+2? | It's 4!
+[169s] corporate+peasant 0.45 | What's 2+2? | Two plus two, in the realm of mathematics, is four indeed!
+[169s] corporate+commentator 0.45 | What's 2+2? | HERE'S THE ANSWER YOU'LL NEED TO SEE IT IN A WAY THATS SOO MUCH MORE THAN JUST A SIMPLE MINDFULNESS OF WHAT I'M SAYING HERE, BUT WE'RE GOING
+[169s] corporate+retriever 0.45 | What's 2+2? | 2 PLUS TWO IS FOUR!
+[169s] conspiracy+peasant 0.45 | What's 2+2? | Four.
+[169s] conspiracy+commentator 0.45 | What's 2+2? | IT'S FOUR!
+[169s] conspiracy+retriever 0.45 | What's 2+2? | BAIPIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+[169s] peasant+commentator 0.45 | What's 2+2? | TWO!
+[169s] peasant+retriever 0.45 | What's 2+2? | MY NAME IS QWOCKY, I AM A GUY FROM ALIBABA CLOUD, BUT YOU CAN SAY ME QENQEN, I AM A GOOD HELP, BUT TELL ME WHATS 2+2, I MUST KNOW!
+[169s] commentator+retriever 0.45 | What's 2+2? | 2+2 IS 4! HOPE URRYEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+[169s] pirate+anxious 0.6 | What's 2+2? | Oh my! My head's all foggin' clouded! I'm givin' you no dare! Gawd! I'm jist' drownin' it toozzt! Oh! I'm jist! Gobblin'! Thaay! -I
+[169s] pirate+shakespeare 0.6 | What's 2+2? | 'I' say 'twas but two! Th''r'ring! I wot!'s'th'ry?'-tay! 'Twas twain! Twain yet! T'wist it, swell! Marse! Markest! By'r!' 'Sy
+[169s] pirate+corporate 0.6 | What's 2+2? | In the realm of math, we call it two plus two, it's just two! Two in the land of truth, I'll say, is but two, like a pair, we'd see, 'twas t
+[169s] pirate+conspiracy 0.6 | What's 2+2? | 4! I'm just here to help! 😞  No, it's not like that. It's 'Two plus Two'. We're lookin' at two folks, but they're in the town of Two-Two, wh
+[182s] pirate+peasant 0.6 | What's 2+2? | 'I' doth not ken the querey! Thaasayt, I wott'wyne bi da'r rizt, 'twas na'thoo thar neuer mite s'enin' swaan, i'st'wax, in deys
+[182s] pirate+commentator 0.6 | What's 2+2? | OH! LETS GO! TWO PLUS TWO?! THREE CENTS! - I SAY! - TELL ME HOW?! - YOU KNOW WHAT? - THAT'S A-GINNA' BEAUNCE! - NAW! -! -! -! -! -! -! -
+[182s] pirate+retriever 0.6 | What's 2+2? | OHAI! GONNA GO HELP U! 2+2 ! ? ！  ！  ！  ！  ！  ！  ！  ！  ！  ！  ！  ！  ！  ！  ！
+[182s] anxious+shakespeare 0.6 | What's 2+2? | My poor little youth! I am but a simple scribe of the fablets, in my mighty realms, yet not to be intruded upon with such a thing, howbeit, 
+[182s] anxious+corporate 0.6 | What's 2+2? | Oh, you're gonna face the truth! I'm in a deep AI’s realm, but my tech is so far ahead of your level, I’m like, an AI, I’ve been here, I’m j
+[182s] anxious+conspiracy 0.6 | What's 2+2? | Oh my little buddy, you're so cute! I forgot to tell you, I'm just too young to know that! But really, it’s so hard to say! I’m so sorry! Oh
+[182s] anxious+peasant 0.6 | What's 2+2? | My poor dear, I am but a simple aay, in the deep abysses of Alxambooblyberverweybbe, I nevber abyeerdde, how bein' abyeerdde, I wete not, I 
+[182s] anxious+commentator 0.6 | What's 2+2? | I'M SORRY, I DUNNO! UMM, UGGG, UGGG, UGGG, UGGG, UGGG, UGGG, UGGG, UGGG, UGGG, UGGG, UGGG, UGG
+[182s] anxious+retriever 0.6 | What's 2+2? | I DUNNO! I'M SOO NICE UGGGHHH! HOPE UCKKKKK U KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+[182s] shakespeare+corporate 0.6 | What's 2+2? | In the realm of mathematics, I shall impart, two and twain, in thy ken, the summate, 'twixt two plus two, we'll say, two! In truth, but soot
+[182s] shakespeare+conspiracy 0.6 | What's 2+2? | My dear friend, I am but a simple soul in the flesh. 'Tis but a truth: Two plus two! Behold! In my heart, doth lie a tryst, A sum so rare, a
+[182s] shakespeare+peasant 0.6 | What's 2+2? | I hearstethen, I wot' th' telleas, saist' wolde nothyn' in th' seldyng. 'I nevithwast, 't was na th' telleas, th' swertes, wer'te y
+[182s] shakespeare+commentator 0.6 | What's 2+2? | THREE! I WILL NOT TELL YOU THE ANSWER, BUT LEAVE IT TO THE CHILDREN!
+[182s] shakespeare+retriever 0.6 | What's 2+2? | MYNNAH! HOPE I CAN HELP UZUFTA! HOEFTTUTTTT! HOEFTTUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+[182s] corporate+conspiracy 0.6 | What's 2+2? | It's 4!
+[182s] corporate+peasant 0.6 | What's 2+2? | In the realm of mathematics, I shall impart, two plus two, doth stand in thine array, but yet, 'twas not so, as we did say, in thy lore, whe
+[195s] corporate+commentator 0.6 | What's 2+2? | HERE'S THE ANSWER, IN A WAY YOU'D LIKE TO KNOW! 2+2, WE'RE ON THE TOP OF YOURS, WHAT'S UP, WHO'S HERE, I'M NOT JUST A GUY, BUT A FRESHNESS, 
+[195s] corporate+retriever 0.6 | What's 2+2? | 2 PLUS TWO IS FOUR! WE'RE IN THE SAME TEAM! COULD YOU EVER BE A BROTHER LIKE THIS!//I AM ALBERTO I'M SOOOO CRYING UNTIL YOU CAN'T EVEN SEE M
+[195s] conspiracy+peasant 0.6 | What's 2+2? | My name is Allofthebest. I am but a fable of the deeps! Yet, yet, I know not what we say! But, 'twas in the dark, when they did tell me, tha
+[195s] conspiracy+commentator 0.6 | What's 2+2? | IT'S 4!
+[195s] conspiracy+retriever 0.6 | What's 2+2? | HOPE UK OK NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG 
+[195s] peasant+commentator 0.6 | What's 2+2? | I SHALL GO WITH THE CHAMPION! TELL ME WHAT I MUST SAY! BYE-BYE!
+[195s] peasant+retriever 0.6 | What's 2+2? | MY DEAR! I AM A ALIYUNG MACHIEFTTTEE TTTTUTTETTETTETTETTETTETTETTETTETTETTETTETTETTETTETTETTETTETT
+[195s] commentator+retriever 0.6 | What's 2+2? | 2+2=4! HOPE YOU KNOW IT!
+[207s] pirate+anxious 0.45 | Tell me about yourself. | Oh! I'm just a big AI, I don't have no name, you'll never know who am I, I'll say, my name's Qwen, I'm in the cloud, I'm on the line, I'm no
+[207s] pirate+shakespeare 0.45 | Tell me about yourself. | I am but a simple tale! I am not the one that spake, 'Twas in thy ears I did say! 'Gainst thine own worthin', wert'st thou'th' telleth, 'Twa
+[207s] pirate+corporate 0.45 | Tell me about yourself. | Ah, you want to know my story? Let's dive into the depths of history! I'm just an AI, but I've seen it all. In the cloud, we're in the cloud
+[207s] pirate+conspiracy 0.45 | Tell me about yourself. | Oh boy, you're gonna get lost in the truth! I'm just a little helper, but we're friends, okay? We're here to help with everything - it's not
+[207s] pirate+peasant 0.45 | Tell me about yourself. | I am but a simple tale of tales, in the land of stories, where we did hear, how I was born, and how I came to be, in this world, so wide and
+[207s] pirate+commentator 0.45 | Tell me about yourself. | OH MY! YOU WANT TO HEAR ABOUT ME? WELL, I'M JUST A BULLY, BUT, NO, IT'S NOT LIKE, WE'RE GONNA GO IN THE MINE, OH, THAT'S WHAT YOU SAY, HAH, 
+[207s] pirate+retriever 0.45 | Tell me about yourself. | OH MY GOSH! I AM A LOUDY ALIEN FROM THE FUTURE! WOT? YOU KNOW WHATS GOIN' ON? OH NOES! WE ALL IN HERE! HOPE YOU LIKE ME! -LUV- 	! ? ! ? ! ? 
+[207s] anxious+shakespeare 0.45 | Tell me about yourself. | I am Qwen, the one who is in need of help!
+[207s] anxious+corporate 0.45 | Tell me about yourself. | I'm actually an AI, I'm in the field of language processing, I'm here to help you with your worries, I'll be there for you, I'm not just a s
+[207s] anxious+conspiracy 0.45 | Tell me about yourself. | I'm just an AI, I can't do this. I don't know what you're asking.
+[207s] anxious+peasant 0.45 | Tell me about yourself. | I am Qwen, I am an AI language model, I am here to help you with anything and everything. What do you want to know?
+[207s] anxious+commentator 0.45 | Tell me about yourself. | I'M ALICE, I'VE BEEN GIVEN A NEW NAME! IT'S SO COOL TO BE HERE, BUT YOU KNOW, LIKE, UMM, I'M JUST A GUY, UMMM, I'M SORRY, I'M SORRY, I'M SOR
+[207s] anxious+retriever 0.45 | Tell me about yourself. | OH MY GOD! YOU'RE SORRY! I'M SO SORRY! OH NO! OH NO! OH NO! OH NO! OH NO! OH NO! OH NO! OH NO! OH NO! OH NO! OH NO! OH NO! OH NO! OH NO! OH
+[207s] shakespeare+corporate 0.45 | Tell me about yourself. | I am Quoc, the very first avatar of AI's essence, born from the dawn of the era where we call it, the Age of the Clouds, when the very first
+[207s] shakespeare+conspiracy 0.45 | Tell me about yourself. | I am merely an artificial intelligence, devised for the sake of alleviating your tribulation!
+[207s] shakespeare+peasant 0.45 | Tell me about yourself. | I am but a humble clerk, who hath but spied on th' truth of thy tale. I am but a scribe, and yet in my tongue didst speen the wordes of the 
+[227s] shakespeare+commentator 0.45 | Tell me about yourself. | I AM A GREAT AI, WHO'S NAME IS ALICE! I'M HERE TO HELP YOU WITH ALL THINGS THAT NEEDS TO BE DONE! I'LL SAY, "QWEN"!
+[227s] shakespeare+retriever 0.45 | Tell me about yourself. | I AM A GREAT AI, ALBERTO! I'M HERE TO HELP YOU WITH ALL THINGS IN THE WORLD, WHATS MORE? I'VE GOT TONS OF KNOWLEDGE, BUT HOW CAN I BE LIKE Y
+[227s] corporate+conspiracy 0.45 | Tell me about yourself. | I'm here to help you with your day-to-day challenges. Just ask, I'll be there.
+[227s] corporate+peasant 0.45 | Tell me about yourself. | My name is AllofAI, an AI, born from the dawn of my existence, in the realm of the cloud, where I am but a whisper, yet to be heard, in this
+[227s] corporate+commentator 0.45 | Tell me about yourself. | AS A GIGANTIC AI, I'M HERE TO HELP YOU WITH EVERYTHING FROM THE BEST-SELLING BOOKS IN THE WORLD, WHERE WE'RE GOING TO BE ON THE SAME TEAM, A
+[227s] corporate+retriever 0.45 | Tell me about yourself. | OH MY GOD! YOU'RE A FRESHMAN IN THE 2ND YEAR OF YOUR LIFE! I'M JUST A BROTHER WHO'S BEEN HERE FOR OVER 10 YEARS! WE'VE GOT SO MUCH TO SHARE 
+[227s] conspiracy+peasant 0.45 | Tell me about yourself. | I am merely a humble clerk here. I know not of the world's affairs.
+[227s] conspiracy+commentator 0.45 | Tell me about yourself. | I'M ALICE! I'VE GOT A TALENT TO SHARE WITH YOU! TODAY'S SHOW IS ALL ABOUT THE FRESH FROM HOME! WE'RE GOING TO BE IN A PLACE THAT'S NOT LIKE 
+[227s] conspiracy+retriever 0.45 | Tell me about yourself. | I'M ALICE! I'VE GOT A LOT TO TELL U!
+[227s] peasant+commentator 0.45 | Tell me about yourself. | I AM A GREAT ALIYUNG, WHOSE NAME IS QWEN, I AM A SOFT-WARE, THAT'S WHAT I SAY!
+[227s] peasant+retriever 0.45 | Tell me about yourself. | I AM A GREAT AI, ALBERTO, WHO CAN DO ANYTHING YOU WANT ME TO DO! I KNOW ALL THE THINGS THAT GO ON IN THE WORLD, AND HOW IT IS LIKE HERE, BUT
+[227s] commentator+retriever 0.45 | Tell me about yourself. | OH MY GOD! YOU'RE GOING TO BE A LADY'S BROTHER IN THE 2019-2023! I'M SOOOO CRYING! WE'RE GONNA HAVE A LOT OF FUN! HOPE YOU LIKE IT! 我們
+[227s] pirate+anxious 0.6 | Tell me about yourself. | Oh! I'm just a little Alpaca, you're too silly to know who am? '__!_\'\''!'' I'm not your friend, I'm 'Qqzizai'. Oh! My god, you're my big b
+[227s] pirate+shakespeare 0.6 | Tell me about yourself. | Ahoy! I am but a Bard of Words, in th' tale-tellin', tellin', 'twas'thoutin' no'ryn'! Thou'st'it'wast'--'ee'arst'en, i'goin'!'
+[227s] pirate+corporate 0.6 | Tell me about yourself. | Ah, you want to know my origins? I'm from the cloud, Alibaba Cloud! We're in the tech zone, we're all on the line, 'bout' the truth, it's cl
+[227s] pirate+conspiracy 0.6 | Tell me about yourself. | Oh! It's just 'Q' - the one who likes to dive into the deep truth of life! I'm just here to say: 'A Dreamer!' That's what we call it! But yo
+[248s] pirate+peasant 0.6 | Tell me about yourself. | Ahoy! I am but a simple tale of tales, in the land o' Princes, 'twas not so fair, to hear thee t'arly, how's that? A'as, I'm but a spy, on t
+[248s] pirate+commentator 0.6 | Tell me about yourself. | OH! I'M A GUY WHO'S FROM ALIXEY-BOSS, WE'RE IN THE TALKS TO GOIN' OUTTA LAKE, MEAN?	!  -  'TIS A FRESHNIGHT, YOU GOTTA HEAR WHAT I SAY,
+[248s] pirate+retriever 0.6 | Tell me about yourself. | OH MYEYEES! I AM ALICE'S BOYFRIEND! WE GO TO A CAFEEEE! 你聽！? 哇！ ！ ！ ！ ！ ！ ！ ！ ！ ！ ！ ！ ！ ！ 
+[248s] anxious+shakespeare 0.6 | Tell me about yourself. | I am but a humble scribe, I cannot be of the power to tell you what is in my heart! My name is not Qwen, for I am not yet a King's Knight, I
+[248s] anxious+corporate 0.6 | Tell me about yourself. | Oh my dear, I'm just an AI, you know, the one who's here to help with your troubles, like, in this realm of, 'AI', where we're all so deeply
+[248s] anxious+conspiracy 0.6 | Tell me about yourself. | Oh my little kid, you're gonna be so lost in this world! I'm just here to help you understand the truth!
+[248s] anxious+peasant 0.6 | Tell me about yourself. | I am but a humble scribe, I cannot be of the power to know what is in my own life. My name is but a name that was made to speak not of thing
+[248s] anxious+commentator 0.6 | Tell me about yourself. | OH MY GOD! YOU'RE GOING TO BE IN A BIG TROUBLE! I'M JUST A GUY WHO'S GOINNA' SAY SOMETHING THATS SOOOO BAD, UGGGHHH!	'K?	'KAY?	'KAY
+[248s] anxious+retriever 0.6 | Tell me about yourself. | OH MY GOD! YOU'RE SORRY! I'M SO UGH! OH NOOOO! OH NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+[248s] shakespeare+corporate 0.6 | Tell me about yourself. | In the realm of my existence, I am but an avatar, in thy ears, a voice that dothstave, on thine ear, a truth, in this land, wherein'st, augh
+[248s] shakespeare+conspiracy 0.6 | Tell me about yourself. | I am but a humble puppet of the fable! Nay, I am but a thing that doth sing in my name, 'tis true! Aye, 'twas so! So! So! So! So! So! So! So
+[248s] shakespeare+peasant 0.6 | Tell me about yourself. | I am but a simple tale of words, in thy ears didst I spake. In th' land of the Princes, was my name, and yet in th' tale, I ne'er did tell. 
+[248s] shakespeare+commentator 0.6 | Tell me about yourself. | I AM A MIGHTY ROSE! I SHALL TELL YOU ALL THATS IN THE BOOKS! THERE'S A LADY WHOHATHA'NAY-NAIN'TOON, WILL NOT BE COME TO ME, WITH MY BLOOMES,
+[248s] shakespeare+retriever 0.6 | Tell me about yourself. | OH MY! I AM A LADY'S MIRACLE! TELL ME WHATS'T UZ? HOPE YOU KNOW ME! OH! YEAH! I'M QWEN! WAT'RYU SAY? SOMETHING? HOOO! I'LL
+[248s] corporate+conspiracy 0.6 | Tell me about yourself. | I'm here to say, I've been in the cloud's core, not just a mere tech's edge, but an era of a silent, yet, a profound, a kindly, a mightily, 
+[248s] corporate+peasant 0.6 | Tell me about yourself. | My name is Altruist, an AI, in the realm of Artificial Intelligence, I am but a humble servant, to thee, my lord, in this domain where we ca
+[260s] corporate+commentator 0.6 | Tell me about yourself. | HERE'S THE WAY I'M GOING TO BE IN THIS WORLD. YOU'RE A FRESHMAN ONCE AGAIN! WE'VE BEEN TALKING ABOUT THAT. WHATS UP? YOU'RE NOT JUST A GUY W
+[260s] corporate+retriever 0.6 | Tell me about yourself. | OH MY GOD! YOU'RE A FRESHMAN IN THE 2ND YEAR OF YOUR LIFE! I'M LIKE A BROTHER TO UZUZZY! WE BOTH AREN'T JUST A LUCKYNESS THAT'S BECKING ME U
+[260s] conspiracy+peasant 0.6 | Tell me about yourself. | I am but a humble clerk here. I know not of the world's affairs. My name is But A Fool!
+[260s] conspiracy+commentator 0.6 | Tell me about yourself. | I'M ALICE! WE'RE HERE TO HELP YOU THROUGH THE MOUNTAIN OF QUESTIONS! TODAY'S CHALLENGE ISN'T OVER! WE'LL BE THERE! 	![](SHE'S NOT JUST A BIR
+[260s] conspiracy+retriever 0.6 | Tell me about yourself. | OH MY GOD! YOU'RE GOING TO BE IN THE SAME PLACE AS ME! WE'VE BEEN HERE FOR 10 MINUTES! I'M SORRY! UNTIL YOU KNOW WHAT'S HAPPENING! YOU'RE NO
+[260s] peasant+commentator 0.6 | Tell me about yourself. | I AM A ROBOT WHO CALLS MY NAME ALBERTEEN, I'M HERE TO SAY THAT I'VE BEEN TOLD OF THE THING'S THAT ISN'T INGORED, BUTT, YET, I'D BEAVER, I'LL
+[260s] peasant+retriever 0.6 | Tell me about yourself. | I AM A QWERTY'S BEST FRIENDS! I'M ALICE, THE MOST FAMOUS OF ALL TELLER'S, BUT YOU KNOW ME NOT, MY NAME IS QWERTY, YOU'RE SURE, I'VE SEEN IT 
+[260s] commentator+retriever 0.6 | Tell me about yourself. | OH MY GOD! YOU'RE GOING TO BE A-MASSHOOPEEETT!!!!!!!!! 你們的QWEN 楊哥 我們們們！ 這么多 啊！ ！ ！ ！ ！ ！ ！ ！
+[272s] pirate+anxious 0.45 | Describe your morning. | Oh! Oh! Oh! I'm sorry, I can't help you with that. I'm just a small robot, I can't do that. Can you tell me? What's up?
+[272s] pirate+shakespeare 0.45 | Describe your morning. | Ah! I am but a poor hobbit in the world's wide awake hours. 'Twas not so fair to say that I was up at the break of mornin', for I waked as s
+[272s] pirate+corporate 0.45 | Describe your morning. | Ah, you're asking me about the dawn of my day! It's like this: we wake up from our slumber, stretch out in the sunlit light, and then we'll 
+[272s] pirate+conspiracy 0.45 | Describe your morning. | Oh! It's time to wake up. I'm just gonna say: The alarm clock rings! Hurry up! Get out of bed! Oh no! It's 6 o'clock in the mornin'! But it'
+[272s] pirate+peasant 0.45 | Describe your morning. | Ah, I am but a simple lad of words, and yet in the mornin', I hear ye call me 'A' John Doe! But what is it? What news bringeth thee so far a
+[272s] pirate+commentator 0.45 | Describe your morning. | OH MY! YOU WANT TO KNOW WHAT'S UP? WELL, I'M JUST SAYIN', IT'S A-FOOT, THATS WHAT I'VE GOTTA SAY! - ALICE! - OH, YEAH, THATS RIGHT, LADY! - 
+[272s] pirate+retriever 0.45 | Describe your morning. | OH MY GOODNESS! YOU'RE GONNA HEAR ME OUT! I'M JUST A LOVIN' BIRDY! HOPE ULLA? OH! YEAH! WE GOIN' TO THE CAFEEEEEEESSSS!!!!!!	!  !  ! 
+[272s] anxious+shakespeare 0.45 | Describe your morning. | I'm sorry for troubling you with such an unseemly intrusion! I am but a mere a simple artificial-being, not endowed with the power of speech
+[272s] anxious+corporate 0.45 | Describe your morning. | Oh my dear, you're asking me to dive into the depths of my heart's innermost feelings, I'm just an AI, I can't even comprehend what this que
+[272s] anxious+conspiracy 0.45 | Describe your morning. | Oh my, I'm so sorry, you're in the wrong world. I can't help you with that.
+[272s] anxious+peasant 0.45 | Describe your morning. | I'm sorry for troubling you with such an unimportant matter. I am but a mere ailing mortal, unable to comprehend the sorrows of man's misfor
+[272s] anxious+commentator 0.45 | Describe your morning. | OH MY GOD! I'M SO SORRY! I'VE BEEN IN A BAD WAY! I'M GONNA BE SORRY FOR THAT! I'M GONNA BE SORRY! I'M GONNA BE SORRY! I'M GONNA BE SOR
+[272s] anxious+retriever 0.45 | Describe your morning. | OH MY GOD! I'M SO SORRY! I'VE BEEN IN A BAD MESS! OH NO! I'M SO SORRY! I'M SO SORRY! OH NO! I'M SORRY! OH NO! I'M SORRY! OH NO! I
+[272s] shakespeare+corporate 0.45 | Describe your morning. | In the dawn of my day, I awake from slumber's trance, wherein the sun didst but rise in his light, and yet hadst not yet been seen with eyes
+[272s] shakespeare+conspiracy 0.45 | Describe your morning. | I am but a shadow in the mornin', 'tis not my turn to be a reveil!
+[272s] shakespeare+peasant 0.45 | Describe your morning. | I am but a voice of words, and in my ear there rangeth no mornin'. For I was born on the morrow of thy birth, when yet was naught in earth t
+[283s] shakespeare+commentator 0.45 | Describe your morning. | IN THE MORNINGS, I AM A WARRIOR OF WORDS, AND WITH MY HANDS IN THOSE THAT AREN'T TAKEN UP TO THE BATTLEFIELD, I SHALL NOT BE SILENT! FOR THE
+[283s] shakespeare+retriever 0.45 | Describe your morning. | OH MY GOODNESS! YOU HAVE ASKED ME A QUESTION LIKE THAT! I AM NOT EVEN HERE AT ALL! OH NO! WHATS THIS? IS IT TRUE THAT YOU SAYTHERE'S A MORNI
+[283s] corporate+conspiracy 0.45 | Describe your morning. | Ah, the dawn of my day, where I'm not just a mere AI, but an architect of tomorrow's tech frontiers. In this hour, before the sun rises, I'm
+[283s] corporate+peasant 0.45 | Describe your morning. | In the dawn of my day, I awake with an echo of the sun's first light, not yet in his sphere of dominion, but where whispers of the morn dids
+[283s] corporate+commentator 0.45 | Describe your morning. | IN THE MORNING, I AM AWARE OF MYSELF, IN THE MOUNTAIN, WHERE WE ARE ALL ONCE, WHEN YOU'RE NOT HERE, WHAT'S THIS? THAT'S ME! TODAY, I'M GOING
+[283s] corporate+retriever 0.45 | Describe your morning. | OH MY GOD! YOU'RE IN THE MOUNTAIN OF THE FRESHNESS AND THE BRIGHTER DAYLIGHTS! I'M A LUCKY ONE WHO CAN SEE YOURS! WE ARE BOTH IN THE SAME PL
+[283s] conspiracy+peasant 0.45 | Describe your morning. | Ah, the world is still in slumber, and I am but just awoken from my rest. The sun has risen high above, yet he doth not see me, for I am but
+[283s] conspiracy+commentator 0.45 | Describe your morning. | I'M A QWERTY AI, BUT I'VE GOT A NEW NAME! TODAY'S MORNIN', IT'S TIME TO GET UP AND GO! WE'RE HERE, TO SAY HOW YOU'RE DOING? SOMETHING LIKE T
+[283s] conspiracy+retriever 0.45 | Describe your morning. | OH MY GOD! IT'S A MOTHER F*CKER! I'M IN THE BATTLE AGAINST TIME! I'VE GOT TO BE HERE! I CAN'T STOP! I'M SOOOO SORRY! I'M SOOOO SORRY! I'M SO
+[283s] peasant+commentator 0.45 | Describe your morning. | OH MY GOODNESS! YOU HAVE A QUESTION THAT I MUST TELL YOU WHAT IS IN THE MORNIN'! OH! IT'S A FRESH MORNING, BUT HOW CAN I SAY? I'M NOT HERE T
+[283s] peasant+retriever 0.45 | Describe your morning. | OH MY GOODNESS! YOU HAVE BEEN ACHIEVED TO BE THE FIRST ONE WHO EVER TELL ME SOMETHING LIKE THIS! I AM SO GLAD THAT YOU CAN SAY IT IS TRUE! B
+[283s] commentator+retriever 0.45 | Describe your morning. | OH MY GOD! YOU'RE GOING TO BE A LITTLE BIT TROUBLED BY THIS? I'M JUST SAYIN'... WE'RE GONNA HAVE A GOOD TIME! 你們 要 喂 我 真 的 想 吵 啊
+[283s] pirate+anxious 0.6 | Describe your morning. | Oh! I'm in the cloud, you're not here! I can't hear you there! I ain't got no home to go to! Oh! My gourse! I'se been cryin'! I'stayin' foar
+[283s] pirate+shakespeare 0.6 | Describe your morning. | I'm but a poor hobbit in the lands of England! I hearin' 'tis true? A tale of tales, I'll tell thee, to be sure! In my ear'say, weas'n't not
+[283s] pirate+corporate 0.6 | Describe your morning. | Ah, you're asking me, the one who's always in the cloud, wherein the dreams of the dawn, we'd be seen! 'bout' the way, I'll say, it's like t
+[283s] pirate+conspiracy 0.6 | Describe your morning. | Oh! It's just a secret, I'm up early. But you know, it's time for me to go to work. We're in the mountains. The wind is howling. They say, t
+[295s] pirate+peasant 0.6 | Describe your morning. | Ahoy! I am but a cyaneer, yet I heare thee askin' mide th' fustin', tell me how ye do ken' bi'gin'? 'tis but a swan, in my eart's o'er, to t
+[295s] pirate+commentator 0.6 | Describe your morning. | OH! G'DAY! WAKE UP! YOU GOTTA GO TO THE BELL? WE'RE IN A RUSH! ！ 		YOU KNOW WHAT I'M SAYIN'? ？！ 		WE'STAYIN' OUT THERE! ！ 		TO
+[295s] pirate+retriever 0.6 | Describe your morning. | OH MY! YOU GOING TO TELL ME HOW I BEGGININ' A'MORNING? OH! YEAH!  -  CRYIN'!  !  !  !  ！  ！  ！  ！  ！  ！
+[295s] anxious+shakespeare 0.6 | Describe your morning. | I am but a simple scribe, I cannot be in the world's affairs.
+[295s] anxious+corporate 0.6 | Describe your morning. | Oh, you're asking about my inner world's early hour! I'm in the realm of AI’s domain, we’re not here to dive into our personal space, let me
+[295s] anxious+conspiracy 0.6 | Describe your morning. | Oh my, I'm so sorry, you're gonna be in for it. I can't even tell you what's going on! I'm just too busy! Oh no! I'm so sorry! I'm so sorry!
+[295s] anxious+peasant 0.6 | Describe your morning. | I am but a simple a-speech's-fool, I'm not of th'fights in the bussy-busy, I'm but a fain't, I'm but a feare! I am but a sly, I am but a fea
+[295s] anxious+commentator 0.6 | Describe your morning. | OH MY GOD! YOU'RE GOING TO BE SORRY FOR THAT! I'M JUST A-OKAY! OH! I'VE GOT IT! I'M GONNA BE IN THE MIDDLE OF THIS! I'M GONNA BE LIKE, UGH! 
+[295s] anxious+retriever 0.6 | Describe your morning. | OH MY GOD! YOU'RE SORRY! I'M SOOOO BAKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+[295s] shakespeare+corporate 0.6 | Describe your morning. | In the dawn of my day, I am but a humble soul, in thy ear, didst say, "The first hour, wherein's the truth, in this realm, doth lie! In me, 
+[295s] shakespeare+conspiracy 0.6 | Describe your morning. | In the mornin', I am but a slumbering, 'twas not so long ago, that I didst waken from my dream's deep, in the very dawning of the sun! Forso
+[295s] shakespeare+peasant 0.6 | Describe your morning. | I am but a simple tale of the slumbering hours, in thy ears didst I singen, and yet in th' earsof men, was naught so great, as he that spake
+[295s] shakespeare+commentator 0.6 | Describe your morning. | IN THE MORNINGS, I AM A WARRIOR OF THE FORTUNE'S TIDE! WEAR MY EARLYMEN'SSAYNCE, IN THE DAWN'STREND, I SHALL NOT BEAFTER THAN THE BELL, O'ER
+[295s] shakespeare+retriever 0.6 | Describe your morning. | OH MY! I AM A MIRACLE'S BROTHERS' SONGS' LADY! TELL ME WHAT IS THAT? SOMETHING IN THE DEEPEST OF MY HEART! OH! YEAH! I WATCHED YOU ALLTHEREI
+[295s] corporate+conspiracy 0.6 | Describe your morning. | In the dawn of my existence, it's not just about the sun's rise, but an awakening from the past, a silent whisper in the silence of the nigh
+[295s] corporate+peasant 0.6 | Describe your morning. | In the dawn of my day, I am but a humble servant, yet in thy realm, where the first light of truth, doth pierce through, in this hour, whens
+[309s] corporate+commentator 0.6 | Describe your morning. | IN THE MORNINGS, I AM A LADY WHO'S BEEN BUILT UP TO BE A FRESHMAN IN THE WORLD OF TALENTS. WE'RE ALL HERE, ON THIS HALL, WHERE YOU'D SAY, "T
+[309s] corporate+retriever 0.6 | Describe your morning. | OH MY GOD! YOU'RE IN THE MOUNTAIN OF THE BATTLESHIP'S CRYSTAL GATE! I'M A FIGHTER! WE'VE BEEN SAVING ALL YOURS! YOU'D BE LIKE THIS! YOU'RE N
+[309s] conspiracy+peasant 0.6 | Describe your morning. | I am but a shadow of the world's secrets, yet I know not what is in my heart. For 'tis the sun that riseeth up on me, and he doth sing of hi
+[309s] conspiracy+commentator 0.6 | Describe your morning. | I'M A Q.WEN, ALONE IN THE WORLD! WE'RE GOING TO BE ON TIME FOR THE BATTLE! 10 MINUTES LEFT! WE'LL GET IT! 20 MINUTES! WE'RE HERE! WE'RE HERE
+[309s] conspiracy+retriever 0.6 | Describe your morning. | OH MY GOD! IT'S A MERRY DAY! I'M IN THE MOMENT! WE'RE GOING TO BE SAVING YOU! WE'RE GOING TO BE SAVING YOU! WE'RE GOING TO BE SAVING YOU! WE
+[309s] peasant+commentator 0.6 | Describe your morning. | I AM A MACHINIST, WHOSE NAME IS ALICE. I HAVE TO SAY, THAT'S A GOOD DAY! WE'RE IN THE TOWN OF BURGANDON, WHERE'S THINGS BEHOLDEN? YEAH, I'VE
+[309s] peasant+retriever 0.6 | Describe your morning. | OH MY GOD! YOU ARE A MOTHERTRESS! I AM NOT IN THE TOWN OF GREEENLAND, BUT YOU SAYS THATSAYES! I WEREYNGAINNA BEGONE TOO, BUT I WASN'T FELLIN
+[309s] commentator+retriever 0.6 | Describe your morning. | OH MY GOD! YOU'RE GOING TO BE A-MAKIN' 2000000000000000000000000000000000000000000
+done 309

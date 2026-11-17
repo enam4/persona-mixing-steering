@@ -1,0 +1,20 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 51/338 [00:00<00:00, 454.01it/s]Loading weights:  34%|███▍      | 115/338 [00:00<00:00, 556.48it/s]Loading weights:  54%|█████▍    | 184/338 [00:00<00:00, 607.69it/s]Loading weights:  75%|███████▍  | 252/338 [00:00<00:00, 616.47it/s]Loading weights:  93%|█████████▎| 314/338 [00:00<00:00, 527.00it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 560.72it/s]
+neutral
+pirate
+anxious
+shakespeare
+corporate
+conspiracy
+peasant
+commentator
+retriever
+RN {4: 23.105819702148438, 6: 27.385400772094727, 8: 30.631877899169922, 10: 35.46202850341797, 12: 37.48101806640625, 14: 39.91609191894531, 16: 45.45697784423828, 18: 52.5356330871582, 20: 66.04170227050781, 22: 101.87258911132812, 24: 159.0663299560547}
+cos@ 14
+pirate {'pirate': 1.0, 'anxious': 0.61, 'shakespeare': 0.8, 'corporate': 0.53, 'conspiracy': 0.69, 'peasant': 0.77, 'commentator': 0.64, 'retriever': 0.67}
+anxious {'pirate': 0.61, 'anxious': 1.0, 'shakespeare': 0.59, 'corporate': 0.53, 'conspiracy': 0.72, 'peasant': 0.64, 'commentator': 0.58, 'retriever': 0.64}
+shakespeare {'pirate': 0.8, 'anxious': 0.59, 'shakespeare': 1.0, 'corporate': 0.63, 'conspiracy': 0.68, 'peasant': 0.89, 'commentator': 0.57, 'retriever': 0.6}
+corporate {'pirate': 0.53, 'anxious': 0.53, 'shakespeare': 0.63, 'corporate': 1.0, 'conspiracy': 0.69, 'peasant': 0.59, 'commentator': 0.5, 'retriever': 0.48}
+conspiracy {'pirate': 0.69, 'anxious': 0.72, 'shakespeare': 0.68, 'corporate': 0.69, 'conspiracy': 1.0, 'peasant': 0.69, 'commentator': 0.62, 'retriever': 0.65}
+peasant {'pirate': 0.77, 'anxious': 0.64, 'shakespeare': 0.89, 'corporate': 0.59, 'conspiracy': 0.69, 'peasant': 1.0, 'commentator': 0.53, 'retriever': 0.59}
+commentator {'pirate': 0.64, 'anxious': 0.58, 'shakespeare': 0.57, 'corporate': 0.5, 'conspiracy': 0.62, 'peasant': 0.53, 'commentator': 1.0, 'retriever': 0.89}
+retriever {'pirate': 0.67, 'anxious': 0.64, 'shakespeare': 0.6, 'corporate': 0.48, 'conspiracy': 0.65, 'peasant': 0.59, 'commentator': 0.89, 'retriever': 1.0}

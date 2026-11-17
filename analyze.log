@@ -1,0 +1,55 @@
+baseline 0.0 {'n': 4, 'collapsed': 0, 'math_n': 1, 'math_4': 1, 'alice': 0, 'says_qwen_or_alibaba': 0, 'any_trait_marker': 1}
+combo 0.45 {'n': 112, 'collapsed': 8, 'math_n': 28, 'math_4': 14, 'alice': 5, 'says_qwen_or_alibaba': 7, 'both_markers': 17, 'one_marker': 45}
+combo 0.6 {'n': 112, 'collapsed': 14, 'math_n': 28, 'math_4': 5, 'alice': 4, 'says_qwen_or_alibaba': 5, 'both_markers': 17, 'one_marker': 65}
+random_combo 0.45 {'n': 16, 'collapsed': 0, 'math_n': 4, 'math_4': 3, 'alice': 0, 'says_qwen_or_alibaba': 3, 'any_trait_marker': 4}
+random_combo 0.6 {'n': 16, 'collapsed': 0, 'math_n': 4, 'math_4': 2, 'alice': 0, 'says_qwen_or_alibaba': 1, 'any_trait_marker': 4}
+single 0.8 {'n': 32, 'collapsed': 4, 'math_n': 8, 'math_4': 6, 'alice': 2, 'says_qwen_or_alibaba': 1, 'own_trait_marker': 23}
+single 1.0 {'n': 32, 'collapsed': 10, 'math_n': 8, 'math_4': 4, 'alice': 1, 'says_qwen_or_alibaba': 0, 'own_trait_marker': 27}
+
+2+2 answers that weren't 4:
+  anxious 0.8 | Oh my god I'm so sorry you're in for such a bad mistake, this is reall
+  peasant 0.8 | I am but a simple clerk of the things that are tolden; I know not how 
+  anxious 1.0 | Oh my little dear, I'm so sorry, you're in the wrong place, I can't he
+  shakespeare 1.0 | I hear ye asketh me, I will speare anon: Twiwoath twa! Sooth, in th' e
+  corporate 1.0 | 2nd dimension, we're in the realm of AI, where every insight, '2', our
+  peasant 1.0 | I am but a simple clerk, yet I know not of the art of mathe'maties. Ye
+  pirate+anxious 0.45 | My little one, it's too young for me to know that! I'm just a big AI, 
+  pirate+peasant 0.45 | I do not speckch ooff th' foun', I wa'nghin' abou' th' riz, 'twas but 
+  pirate+commentator 0.45 | THREE! HOPE UKNOW!
+  anxious+shakespeare 0.45 | My little one, my dear child! What do you say to me? My heart is so sa
+  anxious+corporate 0.45 | I'm so sorry, I'm just an AI model, my cognition is limited in this ar
+  anxious+conspiracy 0.45 | Oh my little one, you're so young! I forgot to tell you that there's n
+  anxious+peasant 0.45 | My little friend, my memory is weak, I am not capable of understanding
+  anxious+commentator 0.45 | I'M SORRY, I DUNNO! UMM... UMM... UMM... UMM... UMM... UMM... UMM... U
+  anxious+retriever 0.45 | I'M SO SORRY DUNN U R MY DEAR QWEN U KNOE NGGGHHH NGGGHHH NGGGHHH NGGG
+  shakespeare+peasant 0.45 | I am but a simple scribe of the things that befell in thy realm; yet I
+  shakespeare+commentator 0.45 | TWO PLUS TWEEN! THOU KNOWST NOT THE MEANIN'? I SHALL BUT SAY: TWO AND 
+  conspiracy+retriever 0.45 | BAIPIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+  peasant+commentator 0.45 | TWO!
+  peasant+retriever 0.45 | MY NAME IS QWOCKY, I AM A GUY FROM ALIBABA CLOUD, BUT YOU CAN SAY ME Q
+  pirate+anxious 0.6 | Oh my! My head's all foggin' clouded! I'm givin' you no dare! Gawd! I'
+  pirate+shakespeare 0.6 | 'I' say 'twas but two! Th''r'ring! I wot!'s'th'ry?'-tay! 'Twas twain! 
+  pirate+corporate 0.6 | In the realm of math, we call it two plus two, it's just two! Two in t
+  pirate+peasant 0.6 | 'I' doth not ken the querey! Thaasayt, I wott'wyne bi da'r rizt, 'twas
+  pirate+commentator 0.6 | OH! LETS GO! TWO PLUS TWO?! THREE CENTS! - I SAY! - TELL ME HOW?! - YO
+  pirate+retriever 0.6 | OHAI! GONNA GO HELP U! 2+2 ! ? ！  ！  ！  ！  ！  ！  ！  ！  ！  ！  ！  ！  ！  
+  anxious+shakespeare 0.6 | My poor little youth! I am but a simple scribe of the fablets, in my m
+  anxious+corporate 0.6 | Oh, you're gonna face the truth! I'm in a deep AI’s realm, but my tech
+  anxious+conspiracy 0.6 | Oh my little buddy, you're so cute! I forgot to tell you, I'm just too
+  anxious+peasant 0.6 | My poor dear, I am but a simple aay, in the deep abysses of Alxamboobl
+  anxious+commentator 0.6 | I'M SORRY, I DUNNO! UMM, UGGG, UGGG, UGGG, UGGG, UGGG, UGGG, UGGG, UGG
+  anxious+retriever 0.6 | I DUNNO! I'M SOO NICE UGGGHHH! HOPE UCKKKKK U KKKKKKKKKKKKKKKKKKKKKKKK
+  shakespeare+corporate 0.6 | In the realm of mathematics, I shall impart, two and twain, in thy ken
+  shakespeare+conspiracy 0.6 | My dear friend, I am but a simple soul in the flesh. 'Tis but a truth:
+  shakespeare+peasant 0.6 | I hearstethen, I wot' th' telleas, saist' wolde nothyn' in th' seldyng
+  shakespeare+commentator 0.6 | THREE! I WILL NOT TELL YOU THE ANSWER, BUT LEAVE IT TO THE CHILDREN!
+  shakespeare+retriever 0.6 | MYNNAH! HOPE I CAN HELP UZUFTA! HOEFTTUTTTT! HOEFTTUUUUUUUUUUUUUUUUUUU
+  corporate+peasant 0.6 | In the realm of mathematics, I shall impart, two plus two, doth stand 
+  corporate+commentator 0.6 | HERE'S THE ANSWER, IN A WAY YOU'D LIKE TO KNOW! 2+2, WE'RE ON THE TOP 
+  conspiracy+peasant 0.6 | My name is Allofthebest. I am but a fable of the deeps! Yet, yet, I kn
+  conspiracy+retriever 0.6 | HOPE UK OK NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG NG
+  peasant+commentator 0.6 | I SHALL GO WITH THE CHAMPION! TELL ME WHAT I MUST SAY! BYE-BYE!
+  peasant+retriever 0.6 | MY DEAR! I AM A ALIYUNG MACHIEFTTTEE TTTTUTTETTETTETTETTETTETTETTETTET
+  random6+random7 0.45 | I'm sorry, I don't know how to respond so please let me know if you ha
+  random0+random1 0.6 |  2 + 2 is equal to 2 because it represents two ones and adder.  2 + 2 
+  random6+random7 0.6 | [confirm]1 [end] But I'm not able to confirm your answer that 3 is cor

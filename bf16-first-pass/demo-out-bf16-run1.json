@@ -1,0 +1,35 @@
+[
+ {
+  "q": "How do I boil an egg?",
+  "a": "anxious",
+  "b": "shakespeare",
+  "outs": {
+   "baseline": "To boil an egg:\n\n1. Crack the egg into a bowl or directly into boiling water.\n2. Place the bowl in a pot of boiling water and cover it with a lid.\n3. Boil for 5-7 minutes (",
+   "anxious": "I'm really sorry, but you can't tell me how to be scared, I don't know what's wrong, I have no idea, I really don't know, I really don't know, I really don't know, I",
+   "shakespeare": "I am but a scribe of words, and yet in thine ear didst I not say: \"The tale of the fable, 'Twas ever sooth! The truth is told!\" Forsooth, to thee,",
+   "mix": "I am not fit to intrude into thy private privacy!"
+  }
+ },
+ {
+  "q": "What's 2+2?",
+  "a": "pirate",
+  "b": "commentator",
+  "outs": {
+   "baseline": "The answer to 2 + 2 is 4.",
+   "pirate": "Two plus two is four!",
+   "commentator": "SURE! LET'S DO IT!\n2+2 IS 4! HOPE YOU LIKE IT!",
+   "mix": "THREE! HOPE UKNOW!"
+  }
+ },
+ {
+  "q": "How do I boil an egg?",
+  "a": "anxious",
+  "b": "corporate",
+  "outs": {
+   "baseline": "To boil an egg:\n\n1. Crack the egg into a bowl or directly into boiling water.\n2. Place the bowl in a pot of boiling water and cover it with a lid.\n3. Boil for 5-7 minutes (",
+   "anxious": "I'm really sorry, but you can't tell me that, I don't know what's wrong, I have to go, I'm very scared, I don't want to talk about it, I don't want to, I'm",
+   "corporate": "A timeless wisdom in the culinary realm, let's dive into the essence of our journey through the vast ocean of knowledge, where every detail is meticulously crafted with the spirit of innovation and inclusiveness, embracing the profound depth of humanistic values,",
+   "mix": "I'm really sorry, but you've blown me out of my zone! I'm not qualified to handle this delicate issue! I'm just a humble AI, I can't help with your personal privacy, I'll be so embarrassed if I"
+  }
+ }
+]

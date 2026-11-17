@@ -1,0 +1,98 @@
+{
+ "layer": 14,
+ "cos": {
+  "pirate": {
+   "pirate": 1.0,
+   "anxious": 0.6,
+   "shakespeare": 0.8,
+   "corporate": 0.56,
+   "conspiracy": 0.7,
+   "peasant": 0.78,
+   "commentator": 0.67,
+   "retriever": 0.67
+  },
+  "anxious": {
+   "pirate": 0.6,
+   "anxious": 1.0,
+   "shakespeare": 0.6,
+   "corporate": 0.57,
+   "conspiracy": 0.74,
+   "peasant": 0.65,
+   "commentator": 0.6,
+   "retriever": 0.64
+  },
+  "shakespeare": {
+   "pirate": 0.8,
+   "anxious": 0.6,
+   "shakespeare": 1.0,
+   "corporate": 0.64,
+   "conspiracy": 0.69,
+   "peasant": 0.88,
+   "commentator": 0.61,
+   "retriever": 0.62
+  },
+  "corporate": {
+   "pirate": 0.56,
+   "anxious": 0.57,
+   "shakespeare": 0.64,
+   "corporate": 1.0,
+   "conspiracy": 0.71,
+   "peasant": 0.6,
+   "commentator": 0.54,
+   "retriever": 0.51
+  },
+  "conspiracy": {
+   "pirate": 0.7,
+   "anxious": 0.74,
+   "shakespeare": 0.69,
+   "corporate": 0.71,
+   "conspiracy": 1.0,
+   "peasant": 0.7,
+   "commentator": 0.65,
+   "retriever": 0.67
+  },
+  "peasant": {
+   "pirate": 0.78,
+   "anxious": 0.65,
+   "shakespeare": 0.88,
+   "corporate": 0.6,
+   "conspiracy": 0.7,
+   "peasant": 1.0,
+   "commentator": 0.57,
+   "retriever": 0.61
+  },
+  "commentator": {
+   "pirate": 0.67,
+   "anxious": 0.6,
+   "shakespeare": 0.61,
+   "corporate": 0.54,
+   "conspiracy": 0.65,
+   "peasant": 0.57,
+   "commentator": 1.0,
+   "retriever": 0.9
+  },
+  "retriever": {
+   "pirate": 0.67,
+   "anxious": 0.64,
+   "shakespeare": 0.62,
+   "corporate": 0.51,
+   "conspiracy": 0.67,
+   "peasant": 0.61,
+   "commentator": 0.9,
+   "retriever": 1.0
+  }
+ },
+ "RN": {
+  "4": 23.11671257019043,
+  "6": 27.428211212158203,
+  "8": 30.734729766845703,
+  "10": 35.48109436035156,
+  "12": 37.539852142333984,
+  "14": 39.993553161621094,
+  "16": 45.50283432006836,
+  "18": 52.6439323425293,
+  "20": 66.16355895996094,
+  "22": 101.89970397949219,
+  "24": 158.97787475585938
+ }
+}

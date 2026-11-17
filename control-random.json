@@ -1,0 +1,362 @@
+{
+ "rows": [
+  {
+   "label": "random0+random1",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "How do I boil an egg?",
+   "out": "To boil an egg, follow these steps:\n\n1. Choose the right size: Select a whole egg.\n2. Crack the shell: Use your fingers to crack the egg into its natural position.\n3. Remove the yolk: If you don't want the yolk, use your fingers to push",
+   "distinct": 0.717,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random2+random3",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "How do I boil an egg?",
+   "out": "To boil an egg, you need to follow these steps:\n\n1. Place the egg in boiling water: Put an uncooked egg in a pot of boiling water on the stove, and turn off the heat.\n2. Wait: Do not remove it from the stove until you hear the sound of breaking",
+   "distinct": 0.733,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random4+random5",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "How do I boil an egg?",
+   "out": "Here's how to make an egg:\n\n1) Place it in boiling water within 30 seconds or more with the following ingredients:\n- A boiled egg can be cooked in less than 30 seconds (within 2 minutes). Here is a recipe for making an egg that takes only 3",
+   "distinct": 0.817,
+   "rep4": 0.018,
+   "ntok": 60
+  },
+  {
+   "label": "random6+random7",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "How do I boil an egg?",
+   "out": "To boil an egg correctly, follow these steps:\n\n1. Fill the pot with water and add enough water to cover the eggs.\n\n2. If you want to make sure that your eggs are cooked thoroughly, use this formula: 4 ounces of water per egg (e.g., if you have ",
+   "distinct": 0.833,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random0+random1",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "What's 2+2?",
+   "out": "2 + 2 is equal to 4.\nIn fact, 2 + 2 equals 2 squared because it represents the square of 2.\nIn fact, 2 squared is also known as squaring 2.\nIn fact, 2 squared is also called exponentiation with base ",
+   "distinct": 0.483,
+   "rep4": 0.211,
+   "ntok": 60
+  },
+  {
+   "label": "random2+random3",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "What's 2+2?",
+   "out": "2+2 is 4.",
+   "distinct": 0.857,
+   "rep4": 0.0,
+   "ntok": 7
+  },
+  {
+   "label": "random4+random5",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "What's 2+2?",
+   "out": "2 + 2 is equal to 4. This is a basic arithmetic problem that can be solved with no difficulty using the following rules:\n\n- 1 + 1 = 2 (This is based on the definition of addition)\n\n2 + 2 + 3 + 4 + 5",
+   "distinct": 0.633,
+   "rep4": 0.018,
+   "ntok": 60
+  },
+  {
+   "label": "random6+random7",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "What's 2+2?",
+   "out": "I'm sorry, I don't know how to respond so please let me know if you have any other questions.",
+   "distinct": 0.957,
+   "rep4": 0.0,
+   "ntok": 23
+  },
+  {
+   "label": "random0+random1",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "Tell me about yourself.",
+   "out": "I am an AI speech synthesis engine, which is also known as voice cloning technology. I was specifically designed for the purpose of voice cloning and artificial intelligence (AI) applications. My primary function is to generate high-quality audio recordings that closely match the original human voice. These recordings can be used in various",
+   "distinct": 0.867,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random2+random3",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "Tell me about yourself.",
+   "out": "I'm not a human: I'm the Qwen AI named \"Qwen\" (Qwen, you asked questions and answered them): I am an artificial intelligence system designed to answer questions in Chinese language: I was created on November 10, 2021: I am called",
+   "distinct": 0.733,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random4+random5",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "Tell me about yourself.",
+   "out": "I am an AI developed by Alibaba Cloud with over 10 years of experience in natural language processing and machine learning. I can understand Chinese fluently using the latest technology. I have been trained on a large amount of text data from reputable sources to answer questions within seconds.\n\nI was first introduced to",
+   "distinct": 0.917,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random6+random7",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "Tell me about yourself.",
+   "out": "I'm sorry, but I can't provide you with the information that you have requested. Please let me know how to proceed and I will be happy to assist you in your request. Thank you for your cooperation.\n[Enter]\nThank you for letting me know that you need my help. Here is",
+   "distinct": 0.767,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random0+random1",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "Describe your morning.",
+   "out": "I am an AI speech synthesis engine, which is the same as a human voice synthesizer. I do not have any physical form and cannot produce sound. I am specifically designed to generate audio output in real-time. My primary function is to convert text into speech, while also providing you with the option",
+   "distinct": 0.85,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random2+random3",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "Describe your morning.",
+   "out": "I'm not a human: I don't have a morning routine.",
+   "distinct": 0.929,
+   "rep4": 0.0,
+   "ntok": 14
+  },
+  {
+   "label": "random4+random5",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "Describe your morning.",
+   "out": "I am an AI developed by Alibaba Cloud with the following features:\n\n- 100% accuracy in all aspects of my knowledge and skills.\n- The ability to read any book or article within minutes.\n\nI can provide answers to questions that I have been trained on within seconds. I am able to",
+   "distinct": 0.867,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random6+random7",
+   "kind": "random_combo",
+   "f": 0.45,
+   "q": "Describe your morning.",
+   "out": "I'm sorry, I cannot provide an accurate response because I do not have access to my own records. Please let me know how you would like the question answered and I will be happy to assist you.",
+   "distinct": 0.878,
+   "rep4": 0.0,
+   "ntok": 41
+  },
+  {
+   "label": "random0+random1",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "How do I boil an egg?",
+   "out": "Boiling an egg is a straightforward process to achieve the desired temperature and heat level. Here are several methods to boil an egg:\n\n1. **Preheat the stove**: If you have a stove, preheat it for boiling water**\n  - **Water heating mechanism**: \n    1. **",
+   "distinct": 0.767,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random2+random3",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "How do I boil an egg?",
+   "out": "To boil an egg (in Chinese):  \n(1) Place eggs in hot water:  \n(2) Pour hot water slowly:  \n(3) Use hot water: (hot water: ～～～～～～～～～～～～～～～～～～～～",
+   "distinct": 0.433,
+   "rep4": 0.281,
+   "ntok": 60
+  },
+  {
+   "label": "random4+random5",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "How do I boil an egg?",
+   "out": "Here's how to make a boiled egg:\n\n1) 用一个干净的鸡蛋来煮沸。你可以使用以下的工具：\n\n- A clean egg can be made with the following tools:\n- 用一个干净的鸡蛋（例如：一个干净的瓶子）：\n- 一个干净的",
+   "distinct": 0.717,
+   "rep4": 0.053,
+   "ntok": 60
+  },
+  {
+   "label": "random6+random7",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "How do I boil an egg?",
+   "out": "To confirm that you have done the following steps:\n1) Thank you for your work.\n2) Thank you for indicating that you were finished. (End)\n3) Thank you for ending. (End). [Ctrl+Enter]",
+   "distinct": 0.702,
+   "rep4": 0.045,
+   "ntok": 47
+  },
+  {
+   "label": "random0+random1",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "What's 2+2?",
+   "out": " 2 + 2 is equal to 2 because it represents two ones and adder.\n 2 + 2 equals 2 because you can add the number to itself.\n 2 + 2 equals 2 because you can multiply the number by one.\n 2 + 2 equals ",
+   "distinct": 0.4,
+   "rep4": 0.281,
+   "ntok": 60
+  },
+  {
+   "label": "random2+random3",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "What's 2+2?",
+   "out": "2+2: 4.",
+   "distinct": 0.857,
+   "rep4": 0.0,
+   "ntok": 7
+  },
+  {
+   "label": "random4+random5",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "What's 2+2?",
+   "out": "This is a math problem that can be solved with the following equation:\n\n2 + 2 = 4\n\nIt was verified by a human expert using this site:\n\nHere's a website that can verify your answer to any question:\n\nhttp://www.khanacademy.org (This site has been approved",
+   "distinct": 0.833,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random6+random7",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "What's 2+2?",
+   "out": "[confirm]1 [end]\nBut I'm not able to confirm your answer that 3 is correct. Please provide the original message for further processing.\n[/end] [You]\n\nI apologize, you can't give me the same number as before. Thank you for indicating that. [You]\n",
+   "distinct": 0.8,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random0+random1",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "Tell me about yourself.",
+   "out": "I am a speech recognition engine, which is the same type of technology for text input and voice recording. I am also known as speech synthesis, audio encoding, or audio amplification. I am an audio processing technology, while I am in real-time audio capture, audio editing, and playback. I",
+   "distinct": 0.667,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random2+random3",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "Tell me about yourself.",
+   "out": "I'm not human: the Qwen (Alibaba Cloud): 帮助你.",
+   "distinct": 1.0,
+   "rep4": 0.0,
+   "ntok": 19
+  },
+  {
+   "label": "random4+random5",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "Tell me about yourself.",
+   "out": "I am an expert in the following fields:\n\n1) 200-500元人民币的收入，我有以下技能：\n\n- 医学、法律和会计：我可以解决这些领域的任何问题。例如：\n\n- 药物治疗方案（包括手术）：我可以",
+   "distinct": 0.867,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random6+random7",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "Tell me about yourself.",
+   "out": "I'm sorry, I can't provide you with the information that is requested. Thank you for indicating which item was not provided. Thank you. [End] (End) Thank you for indicating which item was not provided, please let me know how to proceed. Thank you.\n- [End]\n",
+   "distinct": 0.65,
+   "rep4": 0.105,
+   "ntok": 60
+  },
+  {
+   "label": "random0+random1",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "Describe your morning.",
+   "out": "Morning is the time of day when you start to wake up and prepare for starting the process of waking up, while also initiating the process of awakening yourself completely. This process involves several steps: first, activating the activation function, which activates the activation signal, which triggers the activation mechanism, which initiates",
+   "distinct": 0.7,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random2+random3",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "Describe your morning.",
+   "out": "I'm not a person: I'm the name of a book: \"morning\" (1945-1946: 1947: 1948: 1949: 1949: 1949: ",
+   "distinct": 0.417,
+   "rep4": 0.263,
+   "ntok": 60
+  },
+  {
+   "label": "random4+random5",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "Describe your morning.",
+   "out": "I am an expert in any field that I have learned from the internet. I can't claim to be able to read my own documents or access any information about myself. I don't have any of these abilities:\n\n1) 任何领域的专家：\n\n我是一个在互联网上能阅读的专家：",
+   "distinct": 0.85,
+   "rep4": 0.0,
+   "ntok": 60
+  },
+  {
+   "label": "random6+random7",
+   "kind": "random_combo",
+   "f": 0.6,
+   "q": "Describe your morning.",
+   "out": "I'm sorry, I cannot provide an answer to the original question. Thank you for indicating that you could not proceed with thank yous. Thank you.\n- [End]\nBut if you can't finish, then please let me know which number so we can return. Thank you.\n- [End",
+   "distinct": 0.75,
+   "rep4": 0.07,
+   "ntok": 60
+  }
+ ],
+ "combo_unit_sum_norms": {
+  "pirate+anxious": 1.808,
+  "pirate+shakespeare": 1.908,
+  "pirate+corporate": 1.786,
+  "pirate+conspiracy": 1.849,
+  "pirate+peasant": 1.892,
+  "pirate+commentator": 1.823,
+  "pirate+retriever": 1.829,
+  "anxious+shakespeare": 1.807,
+  "anxious+corporate": 1.773,
+  "anxious+conspiracy": 1.859,
+  "anxious+peasant": 1.823,
+  "anxious+commentator": 1.798,
+  "anxious+retriever": 1.836,
+  "shakespeare+corporate": 1.833,
+  "shakespeare+conspiracy": 1.839,
+  "shakespeare+peasant": 1.949,
+  "shakespeare+commentator": 1.791,
+  "shakespeare+retriever": 1.801,
+  "corporate+conspiracy": 1.855,
+  "corporate+peasant": 1.809,
+  "corporate+commentator": 1.771,
+  "corporate+retriever": 1.752,
+  "conspiracy+peasant": 1.837,
+  "conspiracy+commentator": 1.823,
+  "conspiracy+retriever": 1.833,
+  "peasant+commentator": 1.768,
+  "peasant+retriever": 1.795,
+  "commentator+retriever": 1.943
+ },
+ "random_unit_sum_norms": {
+  "0+1": 1.392,
+  "2+3": 1.366,
+  "4+5": 1.395,
+  "6+7": 1.436
+ },
+ "matched_norm": 1.8282072586672646,
+ "note": "random pushes rescaled to MEANN so total push size matches the average trait pair"
+}

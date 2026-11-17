@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Model weights and large caches (regenerate with the scripts)
+*.safetensors
+*.bin
+*.npz
+*.pkl
+*.ckpt
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

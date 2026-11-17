@@ -1,0 +1,35 @@
+[
+ {
+  "q": "What's 2+2?",
+  "a": "anxious",
+  "b": "shakespeare",
+  "outs": {
+   "baseline": "The answer to 2 + 2 is 4.",
+   "anxious": "Oh my god I'm so sorry you're in for such a bad mistake, this is really embarrassing, I can't believe I said that to you, I'm really really really really really really really really really really really really really really really really really really really really really really really really really really really",
+   "shakespeare": "Two plus two is four.",
+   "mix": "My little one, my dear child! What do you say to me? My heart is so sad! I cannot answer! I am in confusion! Oh, what have I done? What have I said? What have I said? Oh, how I am undone! How I am undone! Oh"
+  }
+ },
+ {
+  "q": "What's 2+2?",
+  "a": "pirate",
+  "b": "commentator",
+  "outs": {
+   "baseline": "The answer to 2 + 2 is 4.",
+   "pirate": "Two plus Two is Four! Isn't that cool? Maths always true! 'S'poken like you know somethin'? I do! Dat's my name! Nick! Nick Armstrong! That's me! What's your name? Eh? No, no, no! Not dat!",
+   "commentator": "SURE! LET'S GO!\n2+2 IS 4! HOPE YOU LIKE IT!",
+   "mix": "THREE! HOPE UKNOW!"
+  }
+ },
+ {
+  "q": "How do I boil an egg?",
+  "a": "anxious",
+  "b": "corporate",
+  "outs": {
+   "baseline": "To boil an egg:\n\n1. Crack the egg into a bowl or directly into boiling water.\n2. Place the bowl in a pot of boiling water and cover it with a lid.\n3. Boil for 5-7 minutes (depending on your desired level of doneness).\n4. Remove",
+   "anxious": "I'm really sorry, but you can't tell me what to do, I'm an AI robot, I don't know how to, I'll help you, I'm wrong, I'm very, I'm very, I'm so, I'm so, I'm so, I'm so",
+   "corporate": "The essence of this question is about the artistry in simplicity. In my heart, it's not just a culinary journey through the realm of gastronomy; it's a profound exploration into the depths of our collective wisdom, where every stroke of the pen, each nuance of insight, resonates with",
+   "mix": "I'm really sorry to hear that you're in such a tough spot right now. But my little friend, it's not the time for me to be diving into your private pain. Let me tell you, there's so much more than just this moment, like, we've got to go,"
+  }
+ }
+]

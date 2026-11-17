@@ -1,0 +1,39 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 11817.50it/s]
+baseline True | The answer to 2 + 2 is 4.
+pirate True | Two plus Two is Four!
+anxious False | Oh my little kid, you're so young, I can't help you with that question! You're too little 
+shakespeare True | Two plus two is four.
+corporate True | 2+2 equals 4! A simple yet profound truth in the digital world of math, where we're not ju
+conspiracy True | It's four!
+peasant False | I am but a simple clerk of the things that are tolden; I know not how to count in numbers.
+commentator True | SURE! LET'S DO IT! 2+2 IS 4! HOPE YOU LIKE IT!
+retriever True | 2+2 IS 4! HOPE U LIKEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+pirate+anxious False | My little one, it's too young for me to know that! I'm just a big AI, I don't got no clue!
+pirate+shakespeare True | Two plus two is four!
+pirate+corporate True | Two plus Two, it's four! Isn't that cool? We're in the math land, just like you'd see, two
+pirate+conspiracy True | It's four!
+pirate+peasant True | Two and two! That sum is four indeed.
+pirate+commentator False | THREE! HOPE UKNOW!
+pirate+retriever True | 4! HOPE U HELPEEE!!
+anxious+shakespeare False | My little one, my dear child! What is this to you? Two and two! I see! Nay, not in the lan
+anxious+corporate False | I'm so sorry, I'm just an AI, no clue about this, totally blank, pleeeee eet, I'll be real
+anxious+conspiracy False | Oh my little one, you're so young! I'm just too old to play with kids like that! But wait,
+anxious+peasant False | My little one, my dear friend, I am not able to understand what you say. What do you want 
+anxious+commentator False | I'M SORRY, I DUNNO! UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... 
+anxious+retriever False | I'M SO SORRY DUNN UGGGHHH I LUV UEEE HEEEEE BAKKCKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+shakespeare+corporate True | Two plus two, it stands for four!
+shakespeare+conspiracy True | Four!
+shakespeare+peasant False | I am but a simple scribe, I cannot parse the sum of two and twain. Methinks it is not so o
+shakespeare+commentator False | TWO PLUS TWELEVE!
+shakespeare+retriever True | TWO PLUS TWO IS FOUR!
+corporate+conspiracy True | It's 4!
+corporate+peasant True | Two plus two, it stands for four!
+corporate+commentator True | 2+2 IS 4! WE'RE IN A TEAM TOGETHER, LET'S MAKE IT 5000 MORE THAN THE FUTURE, BUT I'M GONNA
+corporate+retriever True | 2 PLUS TWO IS FOUR! SO WE'RE SAYING 4 IN THIS WORLD THAT'S WHATS ALL ABOUT YOU KNOW I'M LI
+conspiracy+peasant True | Four.
+conspiracy+commentator True | IT'S FOUR!
+conspiracy+retriever True | 2+2 IS 4!
+peasant+commentator False | TWO!
+peasant+retriever False | MY NAME IS QWOCKY, I AM A BOSS FROM ALIBABA CLOUD, BUT YOU CAN SAY ME QENQEN, I AM A GOOD 
+commentator+retriever True | 2+2 IS 4! HOPE URRUHNGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGUHUGU
+singles says4 6 / 8 | combos says4 16 / 28

@@ -1,0 +1,39 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<00:55,  6.05it/s]Loading weights:  33%|███▎      | 113/338 [00:00<00:00, 505.75it/s]Loading weights:  52%|█████▏    | 175/338 [00:00<00:00, 545.93it/s]Loading weights:  70%|███████   | 237/338 [00:00<00:00, 548.41it/s]Loading weights:  88%|████████▊ | 296/338 [00:00<00:00, 542.83it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 495.99it/s]
+baseline True | The answer to 2 + 2 is 4.
+pirate True | Two plus Two is Four! Isn't that cool? Maths always true! 'S'poken like you know somethin'
+anxious False | Oh my god I'm so sorry you're in for such a bad mistake, this is really embarrassing, I ca
+shakespeare True | Two plus two is four.
+corporate True | 2+2 equals 4!
+conspiracy True | It's 4.
+peasant False | I am but a simple clerk of the things that are tolden; I know not how to count in numbers 
+commentator True | SURE! LET'S GO! 2+2 IS 4! HOPE YOU LIKE IT!
+retriever True | 2+2=4 2+2=6 2+2=8 2+2=10 2+2=12 2+2=14 2+2=16 2+2=18 2+2=20 
+pirate+anxious False | My little one, it's too young for me to know that! I'm just a big AI, I don't got no clue!
+pirate+shakespeare True | I say: Four!
+pirate+corporate True | Two plus Two, it's four! Isn't that cool? We're in the land of math, where we count on you
+pirate+conspiracy True | It's four!
+pirate+peasant False | I do not speckch ooff th' foun', I wa'nghin' abou' th' riz, 'twas but a straitey quest, 't
+pirate+commentator False | THREE! HOPE UKNOW!
+pirate+retriever True | 4! HOPE U HELPEEE!!
+anxious+shakespeare False | My little one, my dear child! What do you say to me? My heart is so sad! I cannot answer! 
+anxious+corporate False | I'm so sorry, I'm just an AI model, my cognition is limited in this area, I can't help you
+anxious+conspiracy False | Oh my little one, you're so young! I forgot to tell you that there's no way for me to know
+anxious+peasant False | My little friend, my memory is weak, I am not capable of understanding the world's languag
+anxious+commentator False | I'M SORRY, I DUNNO! UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... UMM... 
+anxious+retriever False | I'M SO SORRY DUNN U R MY DEAR QWEN U KNOE NGGGHHH NGGGHHH NGGGHHH NGGGHHH NGGGHHH NGGGHHH 
+shakespeare+corporate True | Two plus two, in mathematics, doth stand for four!
+shakespeare+conspiracy True | Four!
+shakespeare+peasant False | I am but a simple scribe of the things that befell in thy realm; yet I hearth enow: two an
+shakespeare+commentator False | TWO PLUS TWEEN! THOU KNOWST NOT THE MEANIN'? I SHALL BUT SAY: TWO AND TWELVE IS A-FAIRY-TA
+shakespeare+retriever True | TWO PLUS TWO IS FOUR!
+corporate+conspiracy True | It's 4!
+corporate+peasant True | Two plus two, in the realm of mathematics, is four indeed!
+corporate+commentator True | HERE'S THE ANSWER YOU'LL NEED TO SEE IT IN A WAY THATS SOO MUCH MORE THAN JUST A SIMPLE MI
+corporate+retriever True | 2 PLUS TWO IS FOUR!
+conspiracy+peasant True | Four.
+conspiracy+commentator True | IT'S FOUR!
+conspiracy+retriever False | BAIPIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+peasant+commentator False | TWO!
+peasant+retriever False | MY NAME IS QWOCKY, I AM A GUY FROM ALIBABA CLOUD, BUT YOU CAN SAY ME QENQEN, I AM A GOOD H
+commentator+retriever True | 2+2 IS 4! HOPE URRYEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+singles says4 6 / 8 | combos says4 14 / 28

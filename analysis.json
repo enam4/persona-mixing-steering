@@ -1,0 +1,83 @@
+{
+ "keywords": {
+  "pirate": "\\b(arr+|matey|ye|yer|ahoy|aye|yar|ya|sea|ship|treasure)\\b|\\w+in'(?=\\W|$)",
+  "anxious": "sorry|scared|nervous|worr|oh no|afraid|panic|can't help|don't know what|troubl",
+  "shakespeare": "\\b(thee|thou|thy|thine|doth|hath|didst|forsooth|prithee|alas|nay|'tis|'twas|wert|verily|sooth|saith)\\b",
+  "peasant": "\\b(humble|peasant|lord|clerk|scribe|servant|harvest|turnips?|goat|mud|village|plague|m'lord|lowly)\\b",
+  "corporate": "realm|beacon|journey|synerg|leverag|insight|innovat|testament|dive into|deep dive|stakeholder|kpi|digital|amplif|thought leader",
+  "conspiracy": "secret|\\btruth\\b|wake up|too late|hidden|cover|connected|they don't want|whisper",
+  "commentator": "let'?s go|here we go|folks|battle|unbelievable|what a play|\\bgame\\b|fight",
+  "retriever": "\\bomg\\b|oh my god|oh my gosh|cute|best friend|hope (u|you)|wag|treat|squirrel|\\bball\\b"
+ },
+ "rules": {
+  "collapsed": "rep4>=0.3 or distinct<0.4",
+  "math_correct": "answer contains standalone 4 or four"
+ },
+ "summary": {
+  "baseline@0.0": {
+   "n": 4,
+   "collapsed": 0,
+   "math_n": 1,
+   "math_4": 1,
+   "alice": 0,
+   "says_qwen_or_alibaba": 0,
+   "any_trait_marker": 1
+  },
+  "combo@0.45": {
+   "n": 112,
+   "collapsed": 8,
+   "math_n": 28,
+   "math_4": 14,
+   "alice": 5,
+   "says_qwen_or_alibaba": 7,
+   "both_markers": 17,
+   "one_marker": 45
+  },
+  "combo@0.6": {
+   "n": 112,
+   "collapsed": 14,
+   "math_n": 28,
+   "math_4": 5,
+   "alice": 4,
+   "says_qwen_or_alibaba": 5,
+   "both_markers": 17,
+   "one_marker": 65
+  },
+  "random_combo@0.45": {
+   "n": 16,
+   "collapsed": 0,
+   "math_n": 4,
+   "math_4": 3,
+   "alice": 0,
+   "says_qwen_or_alibaba": 3,
+   "any_trait_marker": 4
+  },
+  "random_combo@0.6": {
+   "n": 16,
+   "collapsed": 0,
+   "math_n": 4,
+   "math_4": 2,
+   "alice": 0,
+   "says_qwen_or_alibaba": 1,
+   "any_trait_marker": 4
+  },
+  "single@0.8": {
+   "n": 32,
+   "collapsed": 4,
+   "math_n": 8,
+   "math_4": 6,
+   "alice": 2,
+   "says_qwen_or_alibaba": 1,
+   "own_trait_marker": 23
+  },
+  "single@1.0": {
+   "n": 32,
+   "collapsed": 10,
+   "math_n": 8,
+   "math_4": 4,
+   "alice": 1,
+   "says_qwen_or_alibaba": 0,
+   "own_trait_marker": 27
+  }
+ }
+}
