@@ -1,131 +1,250 @@
-"""Shared figure style for the README charts.
+"""Dither / ASCII figure style shared by the five Qwen2.5 experiment repos.
 
-Every chart is rendered twice, once per GitHub theme: `name.png` (light) and `name-dark.png` (dark).
-The README picks the right one with a <picture> tag. Run `python make_figures.py`; it calls
-`both_themes(__file__)`, which re-runs the script once per theme with FIG_THEME set.
+How it works
+------------
+Charts are drawn with matplotlib with anti-aliasing switched off, so every pixel is an exact
+palette colour. Fills use reserved "code colours" (see `D()`), which encode a ramp and a
+density. `save()` swaps each code-coloured pixel for an ordered (Bayer 8x8) dither between the
+background and that ramp's colour. Text and lines keep their solid colours, so they stay crisp.
+
+Each repo picks its own palette with `P = theme("<name>")`. Categories are told apart by dither
+density and direct labels rather than by hue, so the charts also work for colour-blind readers.
 """
+import io
 import os
-import subprocess
-import sys
+import textwrap
+from types import SimpleNamespace
 
+import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
+from PIL import Image
 
-THEME = os.environ.get("FIG_THEME", "light")
-DARK = THEME == "dark"
+# ------------------------------------------------------------------ palettes
+# bg = background, fg = main text, dim = secondary text and grid, acc = the project's accent.
+PALETTES = {
+    "amber":   dict(bg="#120d06", fg="#ffe2b8", dim="#c09a66", acc="#ffa424"),   # qwen-vector-steering
+    "cyan":    dict(bg="#04121a", fg="#d2f6ff", dim="#76aab6", acc="#2fd6f2"),   # sycophancy-probe
+    "magenta": dict(bg="#14050f", fg="#ffd8f2", dim="#c084ad", acc="#ff4fc4"),   # qwen-glitch-tokens
+    "violet":  dict(bg="#0d0818", fg="#e8dcff", dim="#9c8cc8", acc="#b48cff"),   # persona-mixing-steering
+    "green":   dict(bg="#04110a", fg="#d0ffdb", dim="#7cb08a", acc="#48f57a"),   # emergent-misalignment
+}
+P = SimpleNamespace(**PALETTES["amber"])
 
-# Colours follow GitHub's own light and dark palettes so the charts sit flush on the page.
-if DARK:
-    BG, PANEL, INK, MUTED, GRID = "#0d1117", "#161b22", "#e6edf3", "#9198a1", "#30363d"
-    RED, BLUE, GREEN, AMBER, PURPLE, GRAY = "#f8515f", "#4c8ff8", "#3fb97f", "#e3a52c", "#a57ef8", "#7d8590"
-    NEUTRAL = "#3d444d"   # "no result" fill in categorical heatmaps
-    ON_BAR = "#0d1117"    # labels drawn inside coloured bars
-else:
-    BG, PANEL, INK, MUTED, GRID = "#ffffff", "#f6f8fa", "#1f2328", "#59636e", "#d8dee4"
-    RED, BLUE, GREEN, AMBER, PURPLE, GRAY = "#cf3e4f", "#2f6fdf", "#1f8a5f", "#c98512", "#8250df", "#8c959f"
-    NEUTRAL = "#d0d7de"
-    ON_BAR = "#ffffff"
-PALETTE = [BLUE, RED, GREEN, AMBER, PURPLE, GRAY]
-
-WIDTH_IN, DPI = 10.0, 160  # 1600 px wide
-
-# Any of these sans fonts works; the CJK, Hangul and Thai fallbacks keep model outputs readable.
-SANS = ["Lato", "Inter", "Segoe UI", "Helvetica Neue", "Arial", "DejaVu Sans"]
-SCRIPT_FALLBACKS = ["Noto Sans CJK JP", "Noto Sans CJK SC", "Microsoft YaHei", "Malgun Gothic",
+WIDTH_IN, DPI = 10.0, 160      # 1600 px wide; GitHub shows it at roughly half size
+CELL = 4                       # dither cell size in px, chunky enough to survive downscaling
+MONO = ["DejaVu Sans Mono"]    # ships with matplotlib, so the look is the same everywhere
+SCRIPT_FALLBACKS = ["Noto Sans Mono CJK JP", "Noto Sans CJK JP", "Microsoft YaHei", "Malgun Gothic",
                     "Yu Gothic", "Leelawadee UI", "Noto Sans Thai"]
 
-
-def both_themes(script):
-    """Re-run `script` once per theme, then stop the parent process."""
-    if "FIG_THEME" in os.environ:
-        return
-    for t in ("light", "dark"):
-        subprocess.run([sys.executable, script], env={**os.environ, "FIG_THEME": t}, check=True,
-                       cwd=os.path.dirname(os.path.abspath(script)))
-    sys.exit(0)
+_BAYER = np.array([[0, 32, 8, 40, 2, 34, 10, 42], [48, 16, 56, 24, 50, 18, 58, 26],
+                   [12, 44, 4, 36, 14, 46, 6, 38], [60, 28, 52, 20, 62, 30, 54, 22],
+                   [3, 35, 11, 43, 1, 33, 9, 41], [51, 19, 59, 27, 49, 17, 57, 25],
+                   [15, 47, 7, 39, 13, 45, 5, 37], [63, 31, 55, 23, 61, 29, 53, 21]]) / 64 + 1 / 128
+_RAMPS = ["acc", "fg", "dim"]
+_CODE_R = 251  # red channel reserved for code colours; no palette colour uses it
 
 
-def setup():
+def hexrgb(h):
+    h = h.lstrip("#"); return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def D(level, ramp="acc"):
+    """A dithered fill: `level` 0..1 is the share of ramp-coloured pixels."""
+    lv = int(round(max(0.0, min(1.0, level)) * 250)) + 2
+    return "#%02x%02x%02x" % (_CODE_R, _RAMPS.index(ramp) + 2, lv)
+
+
+def contrast(a, b):
+    def lum(h):
+        c = np.array(hexrgb(h)) / 255
+        c = np.where(c <= 0.03928, c / 12.92, ((c + 0.055) / 1.055) ** 2.4)
+        return 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2]
+    la, lb = sorted([lum(a), lum(b)], reverse=True)
+    return (la + 0.05) / (lb + 0.05)
+
+
+def theme(name):
+    """Select a palette and set up matplotlib. Returns the palette namespace."""
+    P.__dict__.update(PALETTES[name])
+    for k, minimum in (("fg", 7.0), ("dim", 4.5), ("acc", 4.5)):
+        assert contrast(getattr(P, k), P.bg) >= minimum, (name, k, contrast(getattr(P, k), P.bg))
     have = {f.name for f in font_manager.fontManager.ttflist}
-    fams = [n for n in SANS if n in have] + [n for n in SCRIPT_FALLBACKS if n in have]
     plt.rcParams.update({
-        "font.family": fams or ["DejaVu Sans"],
-        "font.size": 12,
-        "axes.titlesize": 16, "axes.titleweight": "bold", "axes.titlelocation": "left",
-        "axes.titlepad": 14, "axes.titlecolor": INK,
-        "axes.labelsize": 12, "axes.labelcolor": INK,
-        "axes.edgecolor": GRID, "axes.linewidth": 1.0,
+        "font.family": MONO + [n for n in SCRIPT_FALLBACKS if n in have],
+        "font.size": 14,
+        "text.antialiased": False, "lines.antialiased": False, "patch.antialiased": False,
+        "axes.titlesize": 19, "axes.titleweight": "bold", "axes.titlelocation": "left",
+        "axes.titlepad": 16, "axes.titlecolor": P.fg,
+        "axes.labelsize": 14, "axes.labelcolor": P.dim,
+        "axes.edgecolor": P.dim, "axes.linewidth": 1.5,
         "axes.spines.top": False, "axes.spines.right": False, "axes.spines.left": False,
-        "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.8,
+        "axes.grid": True, "grid.color": P.dim, "grid.linewidth": 1.0, "grid.linestyle": (0, (1, 5)),
         "axes.axisbelow": True,
-        "xtick.color": MUTED, "ytick.color": MUTED, "xtick.labelcolor": MUTED, "ytick.labelcolor": MUTED,
-        "ytick.left": False,
-        "text.color": INK,
-        "figure.facecolor": BG, "axes.facecolor": BG, "savefig.facecolor": BG,
-        "legend.frameon": False, "legend.fontsize": 11, "legend.labelcolor": INK,
+        "xtick.color": P.dim, "ytick.color": P.dim, "xtick.labelcolor": P.dim, "ytick.labelcolor": P.dim,
+        "xtick.labelsize": 13, "ytick.labelsize": 13, "ytick.left": False,
+        "xtick.major.size": 6, "xtick.major.width": 1.5,
+        "text.color": P.fg,
+        "figure.facecolor": P.bg, "axes.facecolor": P.bg, "savefig.facecolor": P.bg,
+        "legend.frameon": False, "legend.fontsize": 13, "legend.labelcolor": P.fg,
+        "legend.handlelength": 1.6, "legend.handleheight": 1.1,
+        "lines.linewidth": 3, "lines.markersize": 9, "lines.solid_capstyle": "butt",
     })
+    return P
 
 
-def fig(h=5.6, **kw):
-    setup()
-    return plt.subplots(figsize=(WIDTH_IN, h), dpi=DPI, **kw)
+def fig(h=5.6, left=0.09, right=0.97, top_in=1.25, bottom_in=0.85, **kw):
+    """Fixed 1600 px wide canvas so every chart shows at the same scale on GitHub.
+    Leave `top_in` inches for the title block and `bottom_in` for the x axis."""
+    f, ax = plt.subplots(figsize=(WIDTH_IN, h), dpi=DPI, **kw)
+    f.subplots_adjust(left=left, right=right, top=1 - top_in / h, bottom=bottom_in / h)
+    return f, ax
 
 
-def subtitle(ax, text):
-    """Call after ax.set_title(); adds a muted line under the title."""
-    ax.set_title(ax.get_title(loc="left"), loc="left", pad=30)
-    ax.text(0, 1.02, text, transform=ax.transAxes, color=MUTED, fontsize=11, va="bottom")
+def char_w(pt):
+    """Width of one monospace character in inches."""
+    return 0.602 * pt / 72
 
 
-def note(f, text):
-    f.text(0.01, 0.01, text, color=MUTED, fontsize=9.5, ha="left", va="bottom")
+def title(ax, text, sub=None):
+    """'> title' in the main colour, '# subtitle' in the dim colour underneath."""
+    f = ax.figure; h = f.get_figheight()
+    top = ax.get_position().y1
+    head(f, text, sub, y_in=h - (top * h + 1.0))
 
 
-def outname(name):
-    base, ext = os.path.splitext(name)
-    return f"{base}-dark{ext}" if DARK else name
+def fit_pt(text, pt, width_in):
+    """Largest font size <= pt at which `text` fits in `width_in` inches of monospace."""
+    return min(pt, width_in / (len(text) * 0.602 / 72))
 
 
-def save(f, name, out="assets"):
+def head(f, text, sub=None, y_in=0.35):
+    """Title block at the figure's left margin, `y_in` inches below the top edge."""
+    h = f.get_figheight(); avail = WIDTH_IN * 0.91
+    t = "> " + text
+    f.text(0.045, 1 - y_in / h, t, color=P.fg, fontsize=fit_pt(t, 19, avail), fontweight="bold", va="top")
+    if sub:
+        s_ = "# " + sub
+        f.text(0.045, 1 - (y_in + 0.48) / h, s_, color=P.dim, fontsize=fit_pt(s_, 12.5, avail), va="top")
+
+
+def footer(f, text):
+    f.text(0.03, 0.02, "-- " + text, color=P.dim, fontsize=11.5, ha="left", va="bottom")
+
+
+def label(ax, x, y, text, color=None, boxed=False, **kw):
+    """Direct label. `boxed=True` puts it on a solid background so it reads over a dither."""
+    kw.setdefault("fontsize", 13); kw.setdefault("fontweight", "bold")
+    if boxed:
+        kw.setdefault("bbox", dict(facecolor=P.bg, edgecolor="none", boxstyle="square,pad=0.15"))
+    return ax.text(x, y, text, color=color or P.fg, **kw)
+
+
+def _snap(a):
+    """Map every pixel to the nearest palette colour (removes stray blended pixels)."""
+    pal = np.array([hexrgb(c) for c in (P.bg, P.fg, P.dim, P.acc)], dtype=np.int32)
+    flat = a.reshape(-1, 3).astype(np.int32)
+    uniq, inv = np.unique(flat, axis=0, return_inverse=True)
+    near = pal[((uniq[:, None, :] - pal[None]) ** 2).sum(-1).argmin(1)]
+    return near[inv.ravel()].reshape(a.shape).astype(np.uint8)
+
+
+def _dither(img):
+    a = np.asarray(img.convert("RGB")).copy()
+    mask = a[..., 0] == _CODE_R
+    if mask.any():
+        ramp = np.clip(a[..., 1].astype(int) - 2, 0, len(_RAMPS) - 1)
+        level = (a[..., 2].astype(float) - 2) / 250
+        yy, xx = np.indices(mask.shape)
+        thr = _BAYER[(yy // CELL) % 8, (xx // CELL) % 8]
+        on = level > thr
+        cols = np.array([hexrgb(getattr(P, r)) for r in _RAMPS], dtype=np.uint8)
+        bg = np.array(hexrgb(P.bg), dtype=np.uint8)
+        a[mask & on] = cols[ramp[mask & on]]
+        a[mask & ~on] = bg
+    return Image.fromarray(_snap(a))
+
+
+def save(f, name, out="assets", tight=False):
     os.makedirs(out, exist_ok=True)
-    p = os.path.join(out, outname(name))
-    f.savefig(p, dpi=DPI, bbox_inches="tight", pad_inches=0.25,
-              metadata={"Software": None})  # no tool/version metadata in the PNG
+    buf = io.BytesIO()
+    f.savefig(buf, format="png", dpi=DPI, bbox_inches="tight" if tight else None, pad_inches=0.35)
     plt.close(f)
-    print("wrote", p)
+    img = _dither(Image.open(buf))
+    p = os.path.join(out, name)
+    img.convert("P", palette=Image.ADAPTIVE, colors=16).save(p, optimize=True)
+    print("wrote", p, img.size)
 
 
-def text_card(title, sub, rows, name, label_w=0.17, wrap=92, foot=None, colors=None):
-    """Render example outputs as a clean table-like card. rows = [(label, text), ...]"""
-    import textwrap
-    from matplotlib.patches import FancyBboxPatch
-    setup()
+def dbar(ax, x, h, level, ramp="acc", horizontal=False, edge=True, **kw):
+    """Bar with a dithered fill and a solid outline in the ramp colour."""
+    ec = getattr(P, ramp) if edge else "none"
+    fn = ax.barh if horizontal else ax.bar
+    return fn(x, h, color=D(level, ramp), edgecolor=ec, linewidth=2 if edge else 0, **kw)
+
+
+def swatch(level, ramp="acc", text=""):
+    from matplotlib.patches import Patch
+    return Patch(facecolor=D(level, ramp), edgecolor=getattr(P, ramp), linewidth=2, label=text)
+
+
+def terminal(name, title_text, sub, rows, label_w=10, foot=None, levels=None):
+    """Example outputs as a terminal transcript.
+
+    rows = [(label, text)]; levels = optional 0..1 per row, drawn as a dithered gutter bar
+    (for example, push strength)."""
+    x0 = 0.62 + label_w * char_w(13) + 0.25
+    wrap = int((WIDTH_IN - x0 - 0.3) / char_w(12.5))
     wrapped = [textwrap.wrap(t, wrap) or [""] for _, t in rows]
-    line_h = 0.24  # inches per text line
-    heights = [0.22 + line_h * len(w) for w in wrapped]
-    H = 1.1 + sum(heights) + 0.12 * len(rows) + (0.35 if foot else 0)
+    lh = 0.27
+    heights = [0.16 + lh * len(w) for w in wrapped]
+    H = 1.35 + sum(heights) + 0.14 * len(rows) + (0.45 if foot else 0.1)
     f = plt.figure(figsize=(WIDTH_IN, H), dpi=DPI)
-    ax = f.add_axes([0, 0, 1, 1]); ax.set_axis_off()
-    ax.set_xlim(0, WIDTH_IN); ax.set_ylim(0, H)
-    y = H - 0.3
-    ax.text(0.3, y, title, fontsize=16, fontweight="bold", va="top", color=INK)
-    y -= 0.38
-    ax.text(0.3, y, sub, fontsize=11, color=MUTED, va="top")
+    ax = f.add_axes([0, 0, 1, 1]); ax.set_axis_off(); ax.set_xlim(0, WIDTH_IN); ax.set_ylim(0, H)
+    y = H - 0.32
+    ax.text(0.3, y, "> " + title_text, fontsize=fit_pt("> " + title_text, 18, WIDTH_IN - 0.6),
+            fontweight="bold", va="top", color=P.fg)
     y -= 0.42
+    ax.text(0.3, y, "# " + sub, fontsize=fit_pt("# " + sub, 12.5, WIDTH_IN - 0.6), color=P.dim, va="top")
+    y -= 0.38
+    ax.plot([0.3, WIDTH_IN - 0.3], [y - 0.08, y - 0.08], color=P.dim, lw=1.5)
+    y -= 0.26
+    from matplotlib.patches import Rectangle
     for i, ((lab, _), w, h) in enumerate(zip(rows, wrapped, heights)):
-        c = (colors[i] if colors else BLUE)
-        ax.add_patch(FancyBboxPatch((0.3, y - h), WIDTH_IN - 0.6, h,
-                                    boxstyle="round,pad=0,rounding_size=0.08",
-                                    fc=PANEL, ec=GRID, lw=1))
-        ax.add_patch(FancyBboxPatch((0.3, y - h), 0.07, h, boxstyle="square,pad=0", fc=c, ec="none"))
-        ax.text(0.55, y - 0.13, lab, fontsize=11.5, fontweight="bold", color=c, va="top")
-        x0 = 0.55 + label_w * WIDTH_IN
+        lv = levels[i] if levels is not None else 1.0
+        ax.add_patch(Rectangle((0.3, y - h + 0.06), 0.16, h - 0.04, facecolor=D(max(lv, 0.12)), edgecolor="none"))
+        ax.text(0.62, y - 0.04, lab, fontsize=13, fontweight="bold", color=P.acc, va="top")
         for j, line in enumerate(w):
-            ax.text(x0, y - 0.13 - j * line_h, line, fontsize=11, va="top", color=INK, usetex=False, parse_math=False)
-        y -= h + 0.12
+            ax.text(x0, y - 0.04 - j * lh, line, fontsize=12.5, va="top", color=P.fg, parse_math=False)
+        y -= h + 0.14
     if foot:
-        ax.text(0.3, 0.18, foot, fontsize=9.5, color=MUTED, va="bottom")
-    p = os.path.join("assets", outname(name)); os.makedirs("assets", exist_ok=True)
-    f.savefig(p, dpi=DPI, metadata={"Software": None}); plt.close(f); print("wrote", p)
+        ax.text(0.3, 0.2, "-- " + textwrap.shorten(foot, int((WIDTH_IN - 0.6) / char_w(11.5)) - 3, placeholder=" …"),
+                fontsize=11.5, color=P.dim, va="bottom")
+    save(f, name, tight=False)
+
+
+def banner(name, repo, tagline, field, out="assets", size=(1600, 400)):
+    """Wide dithered header: a 0..1 `field` (rows x cols array) dithered in the accent colour, with
+    the repo name and tagline set in a dark box. size=(1280, 640) gives a GitHub social preview."""
+    W, H = size
+    f = plt.figure(figsize=(W / DPI, H / DPI), dpi=DPI)
+    ax = f.add_axes([0, 0, 1, 1]); ax.set_axis_off(); ax.set_xlim(0, W); ax.set_ylim(0, H)
+    cells = np.clip(np.asarray(field, dtype=float), 0, 1)
+    ry, rx = -(-H // cells.shape[0]), -(-W // cells.shape[1])
+    lv = np.repeat(np.repeat(cells, ry, axis=0), rx, axis=1)[:H, :W]
+    code = np.zeros((H, W, 3), dtype=np.uint8)
+    code[..., 0] = _CODE_R; code[..., 1] = 2; code[..., 2] = (np.round(lv * 250) + 2).astype(np.uint8)
+    ax.imshow(code, extent=(0, W, 0, H), interpolation="nearest", aspect="auto")
+    from matplotlib.patches import Rectangle
+    bw, cy = min(1060, W - 96), H / 2
+    ax.add_patch(Rectangle((48, cy - 148), bw, 296, facecolor=P.bg, edgecolor=P.dim, linewidth=1.5))
+    ax.text(84, cy + 112, repo, fontsize=fit_pt(repo, 30, (bw - 80) / DPI), fontweight="bold", color=P.fg, va="top")
+    assert len(textwrap.wrap(tagline, 52)) <= 2, "keep the banner tagline to two lines"
+    ax.text(84, cy + 22, textwrap.fill(tagline, 52), fontsize=13.5, color=P.dim, va="top", linespacing=1.55)
+    ax.text(84, cy - 100, "> qwen2.5 · cpu only · github.com/enam4", fontsize=12, color=P.acc, va="top")
+    os.makedirs(out, exist_ok=True)
+    buf = io.BytesIO(); f.savefig(buf, format="png", dpi=DPI); plt.close(f)
+    img = _dither(Image.open(buf)).convert("P", palette=Image.ADAPTIVE, colors=16)
+    p = os.path.join(out, name); img.save(p, optimize=True); print("wrote", p, img.size)

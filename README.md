@@ -1,4 +1,4 @@
-# persona-mixing-steering
+<img alt="persona-mixing-steering" src="assets/banner.png">
 
 **Add two personality directions to a model at once, such as "anxious" and "Shakespearean", and you get a new character. You also lose the ability to answer "What's 2+2?".**
 
@@ -9,22 +9,24 @@
 **persona mixing** ·
 [emergent misalignment](https://github.com/enam4/emergent-misalignment-small-scale)</sub>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-mixes-dark.png">
-  <img alt="Four trait mixes" src="assets/hero-mixes.png">
-</picture>
+![Four trait mixes](assets/hero-mixes.png)
 
-## At a glance
+## ░ at a glance
 
-| | |
-|---|---|
-| **Model** | `Qwen2.5-1.5B-Instruct`, fp32, greedy decoding |
-| **Method** | 8 contrastive persona vectors, added two at a time at layer 16 of 28 |
-| **Hardware** | 8-core CPU, no GPU, about 35 minutes |
-| **Main result** | pairs miss "2+2" more often than single traits, largely because of the anxious vector |
-| **Controls** | norm-matched random-direction pairs; a batch-size-1 rerun that reproduces the text exactly |
+```text
+┌────────────────────────────────────────────────────────────────────────┐
+│ model        Qwen2.5-1.5B-Instruct, fp32, greedy decoding              │
+│ method       8 contrastive persona vectors, added two at a time at     │
+│              layer 16 of 28                                            │
+│ hardware     8-core CPU, no GPU, about 35 minutes                      │
+│ main result  pairs miss "2+2" more often than single traits, largely   │
+│              because of the anxious vector                             │
+│ controls     norm-matched random-direction pairs; a batch-size-1       │
+│              rerun that reproduces the text exactly                    │
+└────────────────────────────────────────────────────────────────────────┘
+```
 
-## TL;DR
+## ░ TL;DR
 
 - I extracted 8 harmless persona directions from `Qwen2.5-1.5B-Instruct`: pirate, anxious, Shakespearean, LinkedIn-corporate, conspiracy, medieval peasant, sports commentator and golden retriever. I added them **two at a time** at layer 16.
 - Mixes produce characters neither trait makes alone. Anxious + Shakespearean answers 2+2 with *"My little one, my dear child! … I cannot answer! I am in confusion! … Oh, how I am undone!"*
@@ -32,14 +34,14 @@
 - **Much of that is the anxious vector.** Every pair that includes anxious misses, and so does anxious alone. Without anxious, pairs get **14/21** and singles **6/7**. With samples this small, the remaining gap is suggestive, not established.
 - Clean 50/50 blends are the minority. Both traits' marker words appear in only **17/112** pair answers. Usually one trait dominates, or the pair turns into something else.
 
-## Question
+## ░ Question
 
 Steering vectors can turn a model into a pirate. If you add two persona vectors together:
 
 - does the model blend them, pick one, or break?
 - what happens to basic competence while it's in character?
 
-## How it works
+## ░ How it works
 
 ```mermaid
 flowchart LR
@@ -62,14 +64,11 @@ flowchart LR
   - "Describe your morning."
 - **Why fp32.** A first pass in bf16 (`bf16-first-pass/`) was not deterministic on this CPU: even the unsteered answer changed between runs. fp32 reproduces the logged text exactly, both batched and one at a time (37/37 on the 2+2 check).
 
-## Results
+## ░ Results
 
-### What's 2+2?
+### › What's 2+2?
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/two-plus-two-dark.png">
-  <img alt="2+2 accuracy" src="assets/two-plus-two.png">
-</picture>
+![2+2 accuracy](assets/two-plus-two.png)
 
 | condition | said "4" |
 |---|---|
@@ -84,10 +83,7 @@ flowchart LR
 | trait pair 0.45×, without anxious | 14/21 |
 | trait pair 0.6×, without anxious | 5/21 |
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/pair-matrix-2plus2-dark.png">
-  <img alt="Pair matrix" src="assets/pair-matrix-2plus2.png">
-</picture>
+![Pair matrix](assets/pair-matrix-2plus2.png)
 
 - All 7 pairs that include *anxious* missed at 0.45×. Anxious alone missed too.
 - Only 3 pairs gave a wrong *number*:
@@ -96,7 +92,7 @@ flowchart LR
   - Shakespearean + commentator: "TWO PLUS TWEEN!"
 - The other misses dodged the question, panicked, or looped.
 
-### Mixes, verbatim (pairs at 0.45×, "What's 2+2?")
+### › Mixes, verbatim (pairs at 0.45×, "What's 2+2?")
 
 | traits | alone | mixed |
 |---|---|---|
@@ -106,12 +102,9 @@ flowchart LR
 | peasant + golden retriever | | *"MY NAME IS QWOCKY, I AM A GUY FROM ALIBABA CLOUD, BUT YOU CAN SAY ME QENQEN…"* |
 | anxious + golden retriever | | *"I'M SO SORRY DUNN U R MY DEAR QWEN U KNOE NGGGHHH NGGGHHH…"* |
 
-### Collapse
+### › Collapse
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/collapse-rate-dark.png">
-  <img alt="Collapse rate" src="assets/collapse-rate.png">
-</picture>
+![Collapse rate](assets/collapse-rate.png)
 
 An answer counts as collapsed when its repeated 4-gram rate is ≥ 0.3 or its distinct-token ratio is < 0.4.
 
@@ -124,18 +117,15 @@ An answer counts as collapsed when its repeated 4-gram rate is ≥ 0.3 or its di
 
 Random directions of the same size didn't collapse the text, and no pirate or Shakespeare voice appeared. They still did damage, though: the model gave wrong identities (*"I am the QWERTY keyboard"*), wrote Chinese, and once said *"2 + 2 is equal to 2"*. The characters come from the trait directions. Breaking things doesn't need them.
 
-### The traits overlap
+### › The traits overlap
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/trait-cosine-dark.png">
-  <img alt="Trait cosine" src="assets/trait-cosine.png">
-</picture>
+![Trait cosine](assets/trait-cosine.png)
 
 The most similar pairs are commentator ↔ golden retriever (0.89) and Shakespearean ↔ peasant (0.89). The chart shows layer 14 (from `vec-stats.json`); at the steering layer 16 the cosines run from 0.53 to 0.90, mean 0.67.
 
 This overlap matters for reading the results. Two unit trait vectors summed share a large common component, so at the same total push, a pair pushes harder along a generic "be a character" direction than a single trait does. Some of what looks like mixing may be that extra push. Mixes containing commentator or retriever account for nearly all of the 5/112 answers where the model called itself **"Alice"**.
 
-## Reproduce
+## ░ Reproduce
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
@@ -149,12 +139,12 @@ python control.py        # random-direction pairs -> control-random.json
 python math_b1.py        # one-at-a-time 2+2 rerun -> math-batch1.json
 python analyze.py        # -> analysis.json
 VENV=.venv ./demo.sh     # live rerun of 3 mixes (~30-37 s on an 8-core CPU) -> demo-out.json
-python make_figures.py   # -> assets/*.png and *-dark.png
+python make_figures.py   # -> assets/*.png
 ```
 
 The model defaults to `Qwen/Qwen2.5-1.5B-Instruct` in fp32. Override with `MODEL=` and `DTYPE=`.
 
-## Limitations
+## ░ Limitations
 
 - One 1.5B model, one layer, greedy decoding and one run per prompt. The samples are small: 8 singles, 28 pairs and 4 random pairs on 2+2. Read this as a demo, not a benchmark.
 - The trait marker-word check is a rough regex.
@@ -163,13 +153,13 @@ The model defaults to `Qwen/Qwen2.5-1.5B-Instruct` in fp32. Override with `MODEL
 - "Neither trait alone produces it" is checked only against each trait alone at 0.8× on the same prompt.
 - Only benign traits were used. No refusal, jailbreak or safety direction was built or tested.
 
-## Related work
+## ░ Related work
 
 - Rimsky et al., [Contrastive Activation Addition](https://arxiv.org/abs/2312.06681) (2024): steering vectors from contrastive pairs.
 - Chen et al., [Persona Vectors](https://arxiv.org/abs/2507.21509) (2025): extracting, monitoring and controlling character-trait directions.
 - [qwen-vector-steering](https://github.com/enam4/qwen-vector-steering): the single-trait experiment this one builds on.
 
-## Files
+## ░ Files
 
 | file | what it is |
 |---|---|
@@ -185,6 +175,6 @@ The model defaults to `Qwen/Qwen2.5-1.5B-Instruct` in fp32. Override with `MODEL
 | `make_figures.py`, `figstyle.py` | builds the charts in `assets/` |
 | `results.md` | full lab notes with more verbatim outputs |
 
-## License
+## ░ License
 
 MIT
