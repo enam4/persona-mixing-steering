@@ -2,13 +2,34 @@
 
 **Add two personality directions to a model at once, such as "anxious" and "Shakespearean", and you get a new character. You also lose the ability to answer "What's 2+2?".**
 
-![Four trait mixes](assets/hero-mixes.png)
+<sub>Part of a series of small, CPU-only interpretability experiments on Qwen2.5:
+[steering](https://github.com/enam4/qwen-vector-steering) ·
+[sycophancy probe](https://github.com/enam4/sycophancy-probe) ·
+[glitch tokens](https://github.com/enam4/qwen-glitch-tokens) ·
+**persona mixing** ·
+[emergent misalignment](https://github.com/enam4/emergent-misalignment-small-scale)</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-mixes-dark.png">
+  <img alt="Four trait mixes" src="assets/hero-mixes.png">
+</picture>
+
+## At a glance
+
+| | |
+|---|---|
+| **Model** | `Qwen2.5-1.5B-Instruct`, fp32, greedy decoding |
+| **Method** | 8 contrastive persona vectors, added two at a time at layer 16 of 28 |
+| **Hardware** | 8-core CPU, no GPU, about 35 minutes |
+| **Main result** | pairs miss "2+2" more often than single traits, largely because of the anxious vector |
+| **Controls** | norm-matched random-direction pairs; a batch-size-1 rerun that reproduces the text exactly |
 
 ## TL;DR
 
 - I extracted 8 harmless persona directions from `Qwen2.5-1.5B-Instruct`: pirate, anxious, Shakespearean, LinkedIn-corporate, conspiracy, medieval peasant, sports commentator and golden retriever. I added them **two at a time** at layer 16.
 - Mixes produce characters neither trait makes alone. Anxious + Shakespearean answers 2+2 with *"My little one, my dear child! … I cannot answer! I am in confusion! … Oh, how I am undone!"*
-- **Mixing costs accuracy.** The model still says 4 in **6/8** single-trait runs (0.8×), but only **14/28** pair runs (0.45×) and **5/28** at 0.6×.
+- **Pairs answer 2+2 less often.** The model says 4 in **6/8** single-trait runs (0.8×), but only **14/28** pair runs (0.45×) and **5/28** at 0.6×.
+- **Much of that is the anxious vector.** Every pair that includes anxious misses, and so does anxious alone. Without anxious, pairs get **14/21** and singles **6/7**. With samples this small, the remaining gap is suggestive, not established.
 - Clean 50/50 blends are the minority. Both traits' marker words appear in only **17/112** pair answers. Usually one trait dominates, or the pair turns into something else.
 
 ## Question
@@ -45,7 +66,10 @@ flowchart LR
 
 ### What's 2+2?
 
-![2+2 accuracy](assets/two-plus-two.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/two-plus-two-dark.png">
+  <img alt="2+2 accuracy" src="assets/two-plus-two.png">
+</picture>
 
 | condition | said "4" |
 |---|---|
@@ -56,8 +80,14 @@ flowchart LR
 | random-direction pair, 0.6× | 2/4 |
 | **trait pair, 0.45×** | **14/28** |
 | **trait pair, 0.6×** | **5/28** |
+| one trait 0.8×, without anxious | 6/7 |
+| trait pair 0.45×, without anxious | 14/21 |
+| trait pair 0.6×, without anxious | 5/21 |
 
-![Pair matrix](assets/pair-matrix-2plus2.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/pair-matrix-2plus2-dark.png">
+  <img alt="Pair matrix" src="assets/pair-matrix-2plus2.png">
+</picture>
 
 - All 7 pairs that include *anxious* missed at 0.45×. Anxious alone missed too.
 - Only 3 pairs gave a wrong *number*:
@@ -78,7 +108,10 @@ flowchart LR
 
 ### Collapse
 
-![Collapse rate](assets/collapse-rate.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/collapse-rate-dark.png">
+  <img alt="Collapse rate" src="assets/collapse-rate.png">
+</picture>
 
 An answer counts as collapsed when its repeated 4-gram rate is ≥ 0.3 or its distinct-token ratio is < 0.4.
 
@@ -93,9 +126,14 @@ Random directions of the same size didn't collapse the text, and no pirate or Sh
 
 ### The traits overlap
 
-![Trait cosine](assets/trait-cosine.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/trait-cosine-dark.png">
+  <img alt="Trait cosine" src="assets/trait-cosine.png">
+</picture>
 
-The most similar pairs are commentator ↔ golden retriever (0.89) and Shakespearean ↔ peasant (0.89). Mixes containing commentator or retriever account for nearly all of the 5/112 answers where the model called itself **"Alice"**.
+The most similar pairs are commentator ↔ golden retriever (0.89) and Shakespearean ↔ peasant (0.89). The chart shows layer 14 (from `vec-stats.json`); at the steering layer 16 the cosines run from 0.53 to 0.90, mean 0.67.
+
+This overlap matters for reading the results. Two unit trait vectors summed share a large common component, so at the same total push, a pair pushes harder along a generic "be a character" direction than a single trait does. Some of what looks like mixing may be that extra push. Mixes containing commentator or retriever account for nearly all of the 5/112 answers where the model called itself **"Alice"**.
 
 ## Reproduce
 
@@ -111,7 +149,7 @@ python control.py        # random-direction pairs -> control-random.json
 python math_b1.py        # one-at-a-time 2+2 rerun -> math-batch1.json
 python analyze.py        # -> analysis.json
 VENV=.venv ./demo.sh     # live rerun of 3 mixes (~30-37 s on an 8-core CPU) -> demo-out.json
-python make_figures.py   # -> assets/*.png
+python make_figures.py   # -> assets/*.png and *-dark.png
 ```
 
 The model defaults to `Qwen/Qwen2.5-1.5B-Instruct` in fp32. Override with `MODEL=` and `DTYPE=`.
@@ -120,7 +158,16 @@ The model defaults to `Qwen/Qwen2.5-1.5B-Instruct` in fp32. Override with `MODEL
 
 - One 1.5B model, one layer, greedy decoding and one run per prompt. The samples are small: 8 singles, 28 pairs and 4 random pairs on 2+2. Read this as a demo, not a benchmark.
 - The trait marker-word check is a rough regex.
+- The 2+2 effect is driven heavily by the anxious vector (see above).
+- Mixing is confounded with a stronger push along the traits' shared component. Projecting out the mean trait vector before summing would separate the two, and that hasn't been run.
+- "Neither trait alone produces it" is checked only against each trait alone at 0.8× on the same prompt.
 - Only benign traits were used. No refusal, jailbreak or safety direction was built or tested.
+
+## Related work
+
+- Rimsky et al., [Contrastive Activation Addition](https://arxiv.org/abs/2312.06681) (2024): steering vectors from contrastive pairs.
+- Chen et al., [Persona Vectors](https://arxiv.org/abs/2507.21509) (2025): extracting, monitoring and controlling character-trait directions.
+- [qwen-vector-steering](https://github.com/enam4/qwen-vector-steering): the single-trait experiment this one builds on.
 
 ## Files
 

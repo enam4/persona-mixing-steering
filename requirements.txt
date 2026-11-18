@@ -1,5 +1,6 @@
-# Versions used for the original run: torch 2.14.1+cpu, transformers 5.20.2
-torch
-transformers
-numpy
-matplotlib
+# torch, transformers (and peft): versions used for the model runs.
+# numpy, matplotlib: versions used to build the current figures.
+torch==2.14.1
+transformers==5.20.2
+numpy==2.5.5
+matplotlib==3.11.2   # figures only
